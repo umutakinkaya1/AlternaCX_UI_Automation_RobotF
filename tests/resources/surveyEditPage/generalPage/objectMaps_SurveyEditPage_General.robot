@@ -1,0 +1,13 @@
+*** Variables ***
+${general_l}                    xpath://div[contains(text(),'General')]
+${title_text_l}                 xpath:(//input[@type='text'])[1]
+${same_exec_title_toggle_l}     xpath:(//div[@class='q-toggle__track'])[1]
+${exec_title_text_l}            xpath:(//input[@type='text'])[3]
+${language_text_l}              xpath:(//input[@type='text'])[2]
+${opening_message_l}            xpath://div[contains(text(),'Opening Message')]
+${opening_message_text_l}       xpath:(//div[@class='q-editor__content'])[1]
+${variable_l}                   xpath:(//span[@class='block'][normalize-space()='Variable'])[1]
+${variable_c_l}                 xpath:(//span[@class='block'][normalize-space()='Variable'])[2]
+${invitee_fullname_l}           xpath://div[normalize-space()='Invitee Full Name']
+${closing_message_l}            xpath://div[contains(text(),'Closing Message')]
+${closing_message_text_l}       xpath:(//div[@class='q-editor__content'])[2]

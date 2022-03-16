@@ -1,0 +1,14 @@
+datasources:1001f9574484d4067264d075b002ce8ceb75295a
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:9e371a69dc758e81778ea7d27500b05dd03886ee
+--suite RobotFramework.Tests.testCases.AlertIconVisibility
+--suite RobotFramework.Tests.testCases.Login
+--suite RobotFramework.Tests.testCases.QuotaScheduleLimit
+--suite RobotFramework.Tests.testCases.SurveyActivate
+--suite RobotFramework.Tests.testCases.SurveyAudience
+--suite RobotFramework.Tests.testCases.SurveyCommunicationRule
+--suite RobotFramework.Tests.testCases.SurveyGeneral
+--suite RobotFramework.Tests.testCases.SurveyList
+--suite RobotFramework.Tests.testCases.TextBubbleChartWidget
+--suite RobotFramework.Tests.testCases.TopicModelList

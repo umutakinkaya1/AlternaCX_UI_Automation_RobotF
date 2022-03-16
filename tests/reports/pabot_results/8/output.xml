@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 14:18:06.577" rpa="false" schemaversion="2">
+<suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
+<suite id="s1-s1" name="TopicModelList" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\TopicModelList.robot">
+<test id="s1-s1-t1" name="Topic Model List Existence Check">
+<kw name="open the browser with ALternaWebPage" library="keywords_LoginPage" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=tests/drivers/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220315 14:18:07.113" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220315 14:18:07.112" endtime="20220315 14:18:08.523"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://staging.alternacx.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220315 14:18:08.524" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220315 14:18:08.523" endtime="20220315 14:18:14.686"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220315 14:18:14.687" endtime="20220315 14:18:14.813"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:07.111" endtime="20220315 14:18:14.814"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:14.814"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:14.814"/>
+</kw>
+<kw name="When fill the login form" library="keywords_LoginPage">
+<arg>umut</arg>
+<arg>Hacettepe2019</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${username_l}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220315 14:18:14.819" endtime="20220315 14:18:16.607"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_l}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:16.609" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220315 14:18:16.607" endtime="20220315 14:18:18.434"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password_l}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:18.436" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220315 14:18:19.519" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220315 14:18:20.187" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220315 14:18:18.435" endtime="20220315 14:18:20.187"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:20.188"/>
+</kw>
+<kw name="And click login buton" library="keywords_LoginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_button_l}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:20.189" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220315 14:18:20.189" endtime="20220315 14:18:21.306"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:20.188" endtime="20220315 14:18:21.307"/>
+</kw>
+<kw name="And click text analytics" library="keywords_mainPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_analytics_l}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220315 14:18:21.308" endtime="20220315 14:18:24.403"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${text_analytics_l}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:24.404" level="INFO">Clicking element 'xpath://div[normalize-space()='Text Analytics']'.</msg>
+<status status="PASS" starttime="20220315 14:18:24.403" endtime="20220315 14:18:25.518"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:21.307" endtime="20220315 14:18:25.518"/>
+</kw>
+<kw name="And click topic models" library="keywords_mainPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${topic_models_l}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220315 14:18:25.520" endtime="20220315 14:18:26.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${topic_models_l}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:26.588" level="INFO">Clicking element 'xpath://div[normalize-space()='Topic Models']'.</msg>
+<status status="PASS" starttime="20220315 14:18:26.586" endtime="20220315 14:18:27.795"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:25.519" endtime="20220315 14:18:27.797"/>
+</kw>
+<kw name="Then should see topic models" library="keywords_TopicModelListPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${first_topic_model_l}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220315 14:18:27.798" endtime="20220315 14:18:32.544"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${first_topic_model_l}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220315 14:18:33.598" level="INFO">Element 'xpath://tbody/tr[1]/td[2]' is displayed.</msg>
+<status status="PASS" starttime="20220315 14:18:32.545" endtime="20220315 14:18:33.599"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${first_topic_model}</var>
+<arg>${first_topic_model_l}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220315 14:18:34.680" level="INFO">${first_topic_model} = Garanti POC Seedword Model</msg>
+<status status="PASS" starttime="20220315 14:18:33.600" endtime="20220315 14:18:34.680"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${first_topic_model}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220315 14:18:34.681" endtime="20220315 14:18:34.682"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:27.797" endtime="20220315 14:18:34.683"/>
+</kw>
+<kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220315 14:18:34.683" endtime="20220315 14:18:37.251"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:34.683" endtime="20220315 14:18:37.252"/>
+</kw>
+<status status="PASS" starttime="20220315 14:18:07.102" endtime="20220315 14:18:37.252"/>
+</test>
+<doc>Survey Activation, Invitation , Preview On Survey Activation Page</doc>
+<status status="PASS" starttime="20220315 14:18:06.622" endtime="20220315 14:18:37.253"/>
+</suite>
+<status status="PASS" starttime="20220315 14:18:06.591" endtime="20220315 14:18:37.264"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TopicModelList">testCases.TopicModelList</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

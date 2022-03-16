@@ -1,0 +1,29 @@
+==============================================================================
+testCases                                                                     
+==============================================================================
+testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget                   
+==============================================================================
+Adding New Text Bubble Chart Widget to Report                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:19
+    T:  Adding New Text Bubble Chart Widget to Report    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:33
+      And click Report that created    ${created_report_l}
+      |  ${created_report_l} = set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')] (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportListPage\keywords_reportListPage.robot:40
+      Wait Until Element Is Visible    ${created_report_l}
+      |  ${created_report_l} = set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')]' not visible after 20 seconds.
+------------------------------------------------------------------------------
+testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+testCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\10\output.xml

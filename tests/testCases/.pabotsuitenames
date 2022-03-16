@@ -1,0 +1,15 @@
+datasources:598e293c760f6fdf6e4ba68f14fc42fb93779444
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:acef838b0159edb7ebaa2cb3c2d648a0fcf184af
+--suite testCases.AlertIconVisibility
+--suite testCases.Login
+--suite testCases.QuotaScheduleLimit
+--suite testCases.SurveyActivate
+--suite testCases.SurveyAudience
+--suite testCases.SurveyCommunicationRule
+--suite testCases.SurveyGeneral
+--suite testCases.SurveyList
+--suite testCases.TopicModelList
+--suite testCases.WidgetImpactButterfly
+--suite testCases.WidgetTextBubbleChart

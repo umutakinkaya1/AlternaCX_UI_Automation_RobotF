@@ -1,0 +1,18 @@
+==============================================================================
+testCases                                                                     
+==============================================================================
+testCases.SurveyAudience :: Survey Audience                                   
+==============================================================================
+Survey Audience Criteria Check                                        | PASS |
+------------------------------------------------------------------------------
+Survey Audience And/Or                                                | PASS |
+------------------------------------------------------------------------------
+Survey Audience Delete All Criteria                                   | PASS |
+------------------------------------------------------------------------------
+testCases.SurveyAudience :: Survey Audience                           | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+testCases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\4\output.xml
