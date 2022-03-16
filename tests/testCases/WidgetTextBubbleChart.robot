@@ -9,15 +9,14 @@ Resource    ../resources/reportWidgetPage/keywords_ReportWidgetPage.robot
 Test Setup  open the browser with ALternaWebPage
 Test Teardown   close browser session
 
-*** Variables ***
-${widget_type}      set variable        Text Bubble Chart
-${random_number}=    Evaluate    random.sample(range(1, 9999), 1)    random
-${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
-${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
 
 
 *** Test Cases ***
 Adding New Text Bubble Chart Widget to Report
+    ${widget_type}      set variable        Text Bubble Chart
+    ${random_number}=    Evaluate    random.sample(range(1, 9999), 1)    random
+    ${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
+    ${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
     set selenium timeout        20
     set selenium speed      2
     When fill the login form    umut    Hacettepe2019

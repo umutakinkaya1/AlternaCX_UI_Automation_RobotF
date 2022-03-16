@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 14:11:10.800" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220316 15:44:40.531" rpa="false" schemaversion="2">
 <suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
 <suite id="s1-s1" name="AlertIconVisibility" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\AlertIconVisibility.robot">
 <test id="s1-s1-t1" name="Alert List Check">
@@ -8,30 +8,30 @@
 <arg>Chrome</arg>
 <arg>executable_path=tests/drivers/chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220315 14:11:11.710" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220315 14:11:11.709" endtime="20220315 14:11:14.039"/>
+<msg timestamp="20220316 15:44:40.764" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220316 15:44:40.764" endtime="20220316 15:44:42.444"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://staging.alternacx.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220315 14:11:14.041" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
-<status status="PASS" starttime="20220315 14:11:14.040" endtime="20220315 14:11:16.740"/>
+<msg timestamp="20220316 15:44:42.444" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220316 15:44:42.444" endtime="20220316 15:44:43.975"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 14:11:16.741" endtime="20220315 14:11:16.855"/>
+<status status="PASS" starttime="20220316 15:44:43.975" endtime="20220316 15:44:44.093"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:11.708" endtime="20220315 14:11:16.855"/>
+<status status="PASS" starttime="20220316 15:44:40.763" endtime="20220316 15:44:44.094"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220315 14:11:16.856" endtime="20220315 14:11:16.858"/>
+<status status="PASS" starttime="20220316 15:44:44.094" endtime="20220316 15:44:44.096"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>2</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220315 14:11:16.858" endtime="20220315 14:11:16.859"/>
+<status status="PASS" starttime="20220316 15:44:44.096" endtime="20220316 15:44:44.096"/>
 </kw>
 <kw name="When fill the login form" library="keywords_LoginPage">
 <arg>umut</arg>
@@ -40,99 +40,99 @@
 <arg>${username_l}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:11:16.862" endtime="20220315 14:11:23.174"/>
+<status status="PASS" starttime="20220316 15:44:44.096" endtime="20220316 15:44:50.389"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:11:23.175" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220315 14:11:23.174" endtime="20220315 14:11:29.593"/>
+<msg timestamp="20220316 15:44:50.389" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220316 15:44:50.389" endtime="20220316 15:44:56.550"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_l}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:11:29.595" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg timestamp="20220315 14:11:33.689" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220315 14:11:36.054" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220315 14:11:29.594" endtime="20220315 14:11:36.054"/>
+<msg timestamp="20220316 15:44:56.551" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220316 15:45:00.637" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220316 15:45:02.885" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220316 15:44:56.550" endtime="20220316 15:45:02.886"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:16.860" endtime="20220315 14:11:36.055"/>
+<status status="PASS" starttime="20220316 15:44:44.096" endtime="20220316 15:45:02.887"/>
 </kw>
 <kw name="And click login buton" library="keywords_LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:11:36.060" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20220315 14:11:36.059" endtime="20220315 14:11:40.296"/>
+<msg timestamp="20220316 15:45:02.890" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220316 15:45:02.889" endtime="20220316 15:45:07.067"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:36.056" endtime="20220315 14:11:40.297"/>
+<status status="PASS" starttime="20220316 15:45:02.888" endtime="20220316 15:45:07.068"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220315 14:11:40.297" endtime="20220315 14:11:40.298"/>
+<status status="PASS" starttime="20220316 15:45:07.069" endtime="20220316 15:45:07.070"/>
 </kw>
 <kw name="When click notification bell" library="keywords_MainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${notification_bell_icon_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:11:40.298" endtime="20220315 14:11:42.398"/>
+<status status="PASS" starttime="20220316 15:45:07.072" endtime="20220316 15:45:09.160"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${notification_bell_icon_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:11:42.402" level="INFO">Clicking element 'xpath://div[@role='alert']'.</msg>
-<status status="PASS" starttime="20220315 14:11:42.400" endtime="20220315 14:11:44.563"/>
+<msg timestamp="20220316 15:45:09.164" level="INFO">Clicking element 'xpath://div[@role='alert']'.</msg>
+<status status="PASS" starttime="20220316 15:45:09.161" endtime="20220316 15:45:11.395"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:40.298" endtime="20220315 14:11:44.564"/>
+<status status="PASS" starttime="20220316 15:45:07.071" endtime="20220316 15:45:11.397"/>
 </kw>
 <kw name="Then i should see alert list" library="keywords_AlertListPage">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220315 14:11:44.567" endtime="20220315 14:11:44.569"/>
+<status status="PASS" starttime="20220316 15:45:11.401" endtime="20220316 15:45:11.403"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${notification_bell_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:11:44.569" endtime="20220315 14:11:46.627"/>
+<status status="PASS" starttime="20220316 15:45:11.403" endtime="20220316 15:45:13.465"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${alert_no}</var>
 <arg>${notification_bell_l}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:11:48.695" level="INFO">${alert_no} = 1422</msg>
-<status status="PASS" starttime="20220315 14:11:46.628" endtime="20220315 14:11:48.696"/>
+<msg timestamp="20220316 15:45:15.517" level="INFO">${alert_no} = 1422</msg>
+<status status="PASS" starttime="20220316 15:45:13.467" endtime="20220316 15:45:15.517"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${alert_list_count_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:11:48.696" endtime="20220315 14:11:50.797"/>
+<status status="PASS" starttime="20220316 15:45:15.518" endtime="20220316 15:45:17.593"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${alert_list_count_l}</arg>
 <arg>${alert_no}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220315 14:11:52.857" level="INFO">Element 'xpath://span[@class='e-pagecountmsg']' contains text '1422'.</msg>
-<status status="PASS" starttime="20220315 14:11:50.798" endtime="20220315 14:11:52.857"/>
+<msg timestamp="20220316 15:45:19.632" level="INFO">Element 'xpath://span[@class='e-pagecountmsg']' contains text '1422'.</msg>
+<status status="PASS" starttime="20220316 15:45:17.594" endtime="20220316 15:45:19.633"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:44.565" endtime="20220315 14:11:52.858"/>
+<status status="PASS" starttime="20220316 15:45:11.398" endtime="20220316 15:45:19.634"/>
 </kw>
 <kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220315 14:11:52.859" endtime="20220315 14:11:55.944"/>
+<status status="PASS" starttime="20220316 15:45:19.637" endtime="20220316 15:45:22.731"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:52.858" endtime="20220315 14:11:55.945"/>
+<status status="PASS" starttime="20220316 15:45:19.634" endtime="20220316 15:45:22.732"/>
 </kw>
-<status status="PASS" starttime="20220315 14:11:11.707" endtime="20220315 14:11:55.945"/>
+<status status="PASS" starttime="20220316 15:44:40.763" endtime="20220316 15:45:22.732"/>
 </test>
 <doc>Alert List Check</doc>
-<status status="PASS" starttime="20220315 14:11:10.857" endtime="20220315 14:11:55.949"/>
+<status status="PASS" starttime="20220316 15:44:40.564" endtime="20220316 15:45:22.733"/>
 </suite>
-<status status="PASS" starttime="20220315 14:11:10.817" endtime="20220315 14:11:55.949"/>
+<status status="PASS" starttime="20220316 15:44:40.542" endtime="20220316 15:45:22.737"/>
 </suite>
 <statistics>
 <total>

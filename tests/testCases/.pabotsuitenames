@@ -1,7 +1,7 @@
-datasources:598e293c760f6fdf6e4ba68f14fc42fb93779444
+datasources:fa344545662766151b84d4d3a2a4cdbb1ce2a378
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:acef838b0159edb7ebaa2cb3c2d648a0fcf184af
+file:7e2cd958ad86c1a66c327b618141984e6566cbb9
 --suite testCases.AlertIconVisibility
 --suite testCases.Login
 --suite testCases.QuotaScheduleLimit
@@ -13,3 +13,8 @@ file:acef838b0159edb7ebaa2cb3c2d648a0fcf184af
 --suite testCases.TopicModelList
 --suite testCases.WidgetImpactButterfly
 --suite testCases.WidgetTextBubbleChart
+--suite testCases.ExternalSurvey
+--suite testCases.WidgetNpsChannelPerformanceWidget
+--suite testCases.WidgetNpsGauge
+--suite testCases.WidgetNpsTrend
+--suite testCases.WidgetOpenEndText

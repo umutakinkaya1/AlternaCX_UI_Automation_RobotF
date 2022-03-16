@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 14:18:06.577" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220316 15:51:12.569" rpa="false" schemaversion="2">
 <suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
 <suite id="s1-s1" name="TopicModelList" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\TopicModelList.robot">
 <test id="s1-s1-t1" name="Topic Model List Existence Check">
@@ -8,30 +8,30 @@
 <arg>Chrome</arg>
 <arg>executable_path=tests/drivers/chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220315 14:18:07.113" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220315 14:18:07.112" endtime="20220315 14:18:08.523"/>
+<msg timestamp="20220316 15:51:13.066" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220316 15:51:13.066" endtime="20220316 15:51:14.489"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://staging.alternacx.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220315 14:18:08.524" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
-<status status="PASS" starttime="20220315 14:18:08.523" endtime="20220315 14:18:14.686"/>
+<msg timestamp="20220316 15:51:14.489" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220316 15:51:14.489" endtime="20220316 15:51:16.723"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 14:18:14.687" endtime="20220315 14:18:14.813"/>
+<status status="PASS" starttime="20220316 15:51:16.724" endtime="20220316 15:51:16.844"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:07.111" endtime="20220315 14:18:14.814"/>
+<status status="PASS" starttime="20220316 15:51:13.065" endtime="20220316 15:51:16.845"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:14.814"/>
+<status status="PASS" starttime="20220316 15:51:16.846" endtime="20220316 15:51:16.848"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:14.814"/>
+<status status="PASS" starttime="20220316 15:51:16.849" endtime="20220316 15:51:16.849"/>
 </kw>
 <kw name="When fill the login form" library="keywords_LoginPage">
 <arg>umut</arg>
@@ -40,102 +40,102 @@
 <arg>${username_l}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:18:14.819" endtime="20220315 14:18:16.607"/>
+<status status="PASS" starttime="20220316 15:51:16.849" endtime="20220316 15:51:18.762"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:16.609" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220315 14:18:16.607" endtime="20220315 14:18:18.434"/>
+<msg timestamp="20220316 15:51:18.766" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220316 15:51:18.764" endtime="20220316 15:51:20.504"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_l}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:18.436" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg timestamp="20220315 14:18:19.519" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220315 14:18:20.187" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220315 14:18:18.435" endtime="20220315 14:18:20.187"/>
+<msg timestamp="20220316 15:51:20.505" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220316 15:51:21.604" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220316 15:51:22.270" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220316 15:51:20.504" endtime="20220316 15:51:22.270"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:14.814" endtime="20220315 14:18:20.188"/>
+<status status="PASS" starttime="20220316 15:51:16.849" endtime="20220316 15:51:22.271"/>
 </kw>
 <kw name="And click login buton" library="keywords_LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:20.189" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20220315 14:18:20.189" endtime="20220315 14:18:21.306"/>
+<msg timestamp="20220316 15:51:22.272" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220316 15:51:22.271" endtime="20220316 15:51:23.375"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:20.188" endtime="20220315 14:18:21.307"/>
+<status status="PASS" starttime="20220316 15:51:22.271" endtime="20220316 15:51:23.376"/>
 </kw>
 <kw name="And click text analytics" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${text_analytics_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:18:21.308" endtime="20220315 14:18:24.403"/>
+<status status="PASS" starttime="20220316 15:51:23.377" endtime="20220316 15:51:25.687"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${text_analytics_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:24.404" level="INFO">Clicking element 'xpath://div[normalize-space()='Text Analytics']'.</msg>
-<status status="PASS" starttime="20220315 14:18:24.403" endtime="20220315 14:18:25.518"/>
+<msg timestamp="20220316 15:51:25.689" level="INFO">Clicking element 'xpath://div[normalize-space()='Text Analytics']'.</msg>
+<status status="PASS" starttime="20220316 15:51:25.688" endtime="20220316 15:51:26.801"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:21.307" endtime="20220315 14:18:25.518"/>
+<status status="PASS" starttime="20220316 15:51:23.376" endtime="20220316 15:51:26.801"/>
 </kw>
 <kw name="And click topic models" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${topic_models_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:18:25.520" endtime="20220315 14:18:26.586"/>
+<status status="PASS" starttime="20220316 15:51:26.802" endtime="20220316 15:51:27.882"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${topic_models_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:26.588" level="INFO">Clicking element 'xpath://div[normalize-space()='Topic Models']'.</msg>
-<status status="PASS" starttime="20220315 14:18:26.586" endtime="20220315 14:18:27.795"/>
+<msg timestamp="20220316 15:51:27.883" level="INFO">Clicking element 'xpath://div[normalize-space()='Topic Models']'.</msg>
+<status status="PASS" starttime="20220316 15:51:27.882" endtime="20220316 15:51:29.101"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:25.519" endtime="20220315 14:18:27.797"/>
+<status status="PASS" starttime="20220316 15:51:26.802" endtime="20220316 15:51:29.102"/>
 </kw>
 <kw name="Then should see topic models" library="keywords_TopicModelListPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${first_topic_model_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 14:18:27.798" endtime="20220315 14:18:32.544"/>
+<status status="PASS" starttime="20220316 15:51:29.104" endtime="20220316 15:51:42.643"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${first_topic_model_l}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220315 14:18:33.598" level="INFO">Element 'xpath://tbody/tr[1]/td[2]' is displayed.</msg>
-<status status="PASS" starttime="20220315 14:18:32.545" endtime="20220315 14:18:33.599"/>
+<msg timestamp="20220316 15:51:43.707" level="INFO">Element 'xpath://tbody/tr[1]/td[2]' is displayed.</msg>
+<status status="PASS" starttime="20220316 15:51:42.643" endtime="20220316 15:51:43.707"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${first_topic_model}</var>
 <arg>${first_topic_model_l}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220315 14:18:34.680" level="INFO">${first_topic_model} = Garanti POC Seedword Model</msg>
-<status status="PASS" starttime="20220315 14:18:33.600" endtime="20220315 14:18:34.680"/>
+<msg timestamp="20220316 15:51:44.768" level="INFO">${first_topic_model} = Emotion Sentiment Model Annotation TR v2.0</msg>
+<status status="PASS" starttime="20220316 15:51:43.707" endtime="20220316 15:51:44.768"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${first_topic_model}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220315 14:18:34.681" endtime="20220315 14:18:34.682"/>
+<status status="PASS" starttime="20220316 15:51:44.768" endtime="20220316 15:51:44.768"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:27.797" endtime="20220315 14:18:34.683"/>
+<status status="PASS" starttime="20220316 15:51:29.103" endtime="20220316 15:51:44.768"/>
 </kw>
 <kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220315 14:18:34.683" endtime="20220315 14:18:37.251"/>
+<status status="PASS" starttime="20220316 15:51:44.768" endtime="20220316 15:51:47.356"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:34.683" endtime="20220315 14:18:37.252"/>
+<status status="PASS" starttime="20220316 15:51:44.768" endtime="20220316 15:51:47.357"/>
 </kw>
-<status status="PASS" starttime="20220315 14:18:07.102" endtime="20220315 14:18:37.252"/>
+<status status="PASS" starttime="20220316 15:51:13.061" endtime="20220316 15:51:47.357"/>
 </test>
 <doc>Survey Activation, Invitation , Preview On Survey Activation Page</doc>
-<status status="PASS" starttime="20220315 14:18:06.622" endtime="20220315 14:18:37.253"/>
+<status status="PASS" starttime="20220316 15:51:12.625" endtime="20220316 15:51:47.362"/>
 </suite>
-<status status="PASS" starttime="20220315 14:18:06.591" endtime="20220315 14:18:37.264"/>
+<status status="PASS" starttime="20220316 15:51:12.584" endtime="20220316 15:51:47.365"/>
 </suite>
 <statistics>
 <total>

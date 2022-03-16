@@ -6,19 +6,48 @@ testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget
 Adding New Text Bubble Chart Widget to Report                           
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:19
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:20
     T:  Adding New Text Bubble Chart Widget to Report    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:33
-      And click Report that created    ${created_report_l}
-      |  ${created_report_l} = set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')] (str)
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:31
+      And search report on report list screen    ${random_number}
+      |  ${random_number} = Evaluate random.sample(range(1, 9999), 1) random (str)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportListPage\keywords_reportListPage.robot:40
-      Wait Until Element Is Visible    ${created_report_l}
-      |  ${created_report_l} = set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')] (str)
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportListPage\keywords_reportListPage.robot:31
+      Click Element    ${search_bar_l}
+      |  ${search_bar_l} = //input[@placeholder='Search'] (str)
 ______________________________________________________________________________
 | FAIL |
-Element 'set variable //div[contains(text(), 'Automation ReportEvaluate random.sample(range(1, 9999), 1) random')]' not visible after 20 seconds.
+ElementClickInterceptedException: Message: element click intercepted: Element <input tabindex="0" placeholder="Search" id="f_d038519c-fd87-422d-9180-c5996db49722" type="text" class="q-field__native q-placeholder"> is not clickable at point (754, 81). Other element would receive the click: <div aria-hidden="true" class="q-dialog__backdrop fixed-full"></div>
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00379943+2595139]
+	Ordinal0 [0x0030C9F1+2148849]
+	Ordinal0 [0x00204528+1066280]
+	Ordinal0 [0x00237621+1275425]
+	Ordinal0 [0x00235657+1267287]
+	Ordinal0 [0x0023333B+1258299]
+	Ordinal0 [0x0023207D+1253501]
+	Ordinal0 [0x00227AB3+1211059]
+	Ordinal0 [0x0024B9EC+1358316]
+	Ordinal0 [0x00227474+1209460]
+	Ordinal0 [0x0024BC04+1358852]
+	Ordinal0 [0x0025BAF2+1424114]
+	Ordinal0 [0x0024B806+1357830]
+	Ordinal0 [0x00226086+1204358]
+	Ordinal0 [0x00226F96+1208214]
+	GetHandleVerifier [0x0051B232+1658114]
+	GetHandleVerifier [0x005D312C+2411516]
+	GetHandleVerifier [0x0040F261+560433]
+	GetHandleVerifier [0x0040E366+556598]
+	Ordinal0 [0x0031286B+2173035]
+	Ordinal0 [0x003175F8+2192888]
+	Ordinal0 [0x003176E5+2193125]
+	Ordinal0 [0x003211FC+2232828]
+	BaseThreadInitThunk [0x7686FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A27A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77A27A6E+238]
 ------------------------------------------------------------------------------
 testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget           | FAIL |
 1 test, 0 passed, 1 failed
