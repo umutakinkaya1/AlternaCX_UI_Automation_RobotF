@@ -52,7 +52,6 @@ choose Topic Model
         press keys      None        ARROW_DOWN
         press keys      None        RETURN
         press keys      None        ARROW_DOWN
-        press keys      None        ARROW_DOWN
         press keys      None        RETURN
     END
 
