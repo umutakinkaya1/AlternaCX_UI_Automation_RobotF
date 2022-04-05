@@ -3,55 +3,12 @@ testCases
 ==============================================================================
 testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget                   
 ==============================================================================
-Adding New Text Bubble Chart Widget to Report                           
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:15
-    T:  Adding New Text Bubble Chart Widget to Report    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:52
-      And add widget    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportWidgetPage\keywords_ReportWidgetPage.robot:8
-      Click Element    ${add_widget_l}
-      |  ${add_widget_l} = //span[normalize-space()='Add Widget'] (str)
-______________________________________________________________________________
-| FAIL |
-ElementClickInterceptedException: Message: element click intercepted: Element <span class="block">...</span> is not clickable at point (581, 93). Other element would receive the click: <div class="q-item q-item-type row no-wrap acx-toggle-row">...</div>
-  (Session info: chrome=99.0.4844.82)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x005D9943+2595139]
-	Ordinal0 [0x0056C9F1+2148849]
-	Ordinal0 [0x00464528+1066280]
-	Ordinal0 [0x00497621+1275425]
-	Ordinal0 [0x00495657+1267287]
-	Ordinal0 [0x0049333B+1258299]
-	Ordinal0 [0x0049207D+1253501]
-	Ordinal0 [0x00487AB3+1211059]
-	Ordinal0 [0x004AB9EC+1358316]
-	Ordinal0 [0x00487474+1209460]
-	Ordinal0 [0x004ABC04+1358852]
-	Ordinal0 [0x004BBAF2+1424114]
-	Ordinal0 [0x004AB806+1357830]
-	Ordinal0 [0x00486086+1204358]
-	Ordinal0 [0x00486F96+1208214]
-	GetHandleVerifier [0x0077B232+1658114]
-	GetHandleVerifier [0x0083312C+2411516]
-	GetHandleVerifier [0x0066F261+560433]
-	GetHandleVerifier [0x0066E366+556598]
-	Ordinal0 [0x0057286B+2173035]
-	Ordinal0 [0x005775F8+2192888]
-	Ordinal0 [0x005776E5+2193125]
-	Ordinal0 [0x005811FC+2232828]
-	BaseThreadInitThunk [0x7686FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77A27A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x77A27A6E+238]
+Adding New Text Bubble Chart Widget to Report                         | PASS |
 ------------------------------------------------------------------------------
-testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget           | FAIL |
-1 test, 0 passed, 1 failed
+testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget           | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-testCases                                                             | FAIL |
-1 test, 0 passed, 1 failed
+testCases                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\10\output.xml

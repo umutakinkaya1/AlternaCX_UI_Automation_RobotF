@@ -5,23 +5,12 @@ testCases.Login :: Login AlternaWebPage
 ==============================================================================
 Invalid Username                                                      | PASS |
 ------------------------------------------------------------------------------
-Invalid Password                                                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\Login.robot:18
-    T:  Invalid Password    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\Login.robot:23
-      Wait Until Element Is Visible    ${notification_message_l}
-      |  ${notification_message_l} = //div[@class='q-notification__message col'] (str)
-______________________________________________________________________________
-| FAIL |
-Element '//div[@class='q-notification__message col']' not visible after 20 seconds.
+Invalid Password                                                      | PASS |
 ------------------------------------------------------------------------------
-testCases.Login :: Login AlternaWebPage                               | FAIL |
-2 tests, 1 passed, 1 failed
+testCases.Login :: Login AlternaWebPage                               | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
-testCases                                                             | FAIL |
-2 tests, 1 passed, 1 failed
+testCases                                                             | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\1\output.xml

@@ -3,7 +3,7 @@ testCases
 ==============================================================================
 testCases.TopicModelList :: Survey Activation, Invitation , Preview On Surv...
 ==============================================================================
-Topic Model List Existence Check                                      Emotion Sentiment Model Annotation TR v2.0
+Topic Model List Existence Check                                      Banking Intent Model TR v2.0
 | PASS |
 ------------------------------------------------------------------------------
 testCases.TopicModelList :: Survey Activation, Invitation , Previe... | PASS |

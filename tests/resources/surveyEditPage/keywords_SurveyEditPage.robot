@@ -141,9 +141,10 @@ send to test users
     wait until element is visible       //div[@class='q-img__content absolute-full']
 
 click Save
-    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
-    wait until element is visible       ${save_l}
-    click element   ${save_l}
-    set selenium speed      3
-    wait until element is visible       //div[@class='q-img__content absolute-full']
+     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+     scroll element into view       ${save_l}
+     wait until element is visible       ${save_l}
+     click element   ${save_l}
+     set selenium speed      3
+     wait until element is visible       //div[@class='q-img__content absolute-full']
 

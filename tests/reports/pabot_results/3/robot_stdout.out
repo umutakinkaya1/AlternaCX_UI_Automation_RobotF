@@ -1,11 +1,11 @@
 ==============================================================================
 testCases                                                                     
 ==============================================================================
-testCases.SurveyActivate :: Survey Activation, Invitation , Preview On Surv...
+testCases.SurveyActivate :: Survey Activation, Preview On Survey Activation...
 ==============================================================================
 Survey Preview                                                        | PASS |
 ------------------------------------------------------------------------------
-testCases.SurveyActivate :: Survey Activation, Invitation , Previe... | PASS |
+testCases.SurveyActivate :: Survey Activation, Preview On Survey A... | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 testCases                                                             | PASS |

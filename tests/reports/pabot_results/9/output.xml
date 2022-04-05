@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220323 16:33:42.293" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220405 16:16:25.464" rpa="false" schemaversion="2">
 <suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
 <suite id="s1-s1" name="WidgetImpactButterfly" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetImpactButterfly.robot">
 <test id="s1-s1-t1" name="Adding New Butterfly Widget to Report">
@@ -8,59 +8,59 @@
 <arg>Chrome</arg>
 <arg>executable_path=tests/drivers/chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220323 16:33:42.814" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220323 16:33:42.813" endtime="20220323 16:33:44.441"/>
+<msg timestamp="20220405 16:16:25.751" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220405 16:16:25.750" endtime="20220405 16:16:26.905"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://staging.alternacx.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220323 16:33:44.442" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
-<status status="PASS" starttime="20220323 16:33:44.441" endtime="20220323 16:33:47.032"/>
+<msg timestamp="20220405 16:16:26.906" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220405 16:16:26.906" endtime="20220405 16:16:28.461"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220323 16:33:47.032" endtime="20220323 16:33:47.157"/>
+<status status="PASS" starttime="20220405 16:16:28.462" endtime="20220405 16:16:28.593"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:42.811" endtime="20220323 16:33:47.158"/>
+<status status="PASS" starttime="20220405 16:16:25.749" endtime="20220405 16:16:28.593"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${widget_type}</var>
 <arg>Impact Butterfly</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220323 16:33:47.159" level="INFO">${widget_type} = Impact Butterfly</msg>
-<status status="PASS" starttime="20220323 16:33:47.158" endtime="20220323 16:33:47.160"/>
+<msg timestamp="20220405 16:16:28.595" level="INFO">${widget_type} = Impact Butterfly</msg>
+<status status="PASS" starttime="20220405 16:16:28.594" endtime="20220405 16:16:28.595"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${random_number}</var>
 <arg>random.sample(range(1, 9999), 1)</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220323 16:33:47.161" level="INFO">${random_number} = [9482]</msg>
-<status status="PASS" starttime="20220323 16:33:47.160" endtime="20220323 16:33:47.161"/>
+<msg timestamp="20220405 16:16:28.597" level="INFO">${random_number} = [6606]</msg>
+<status status="PASS" starttime="20220405 16:16:28.595" endtime="20220405 16:16:28.597"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${created_report_l}</var>
 <arg>//div[contains(text(), 'Automation Report${random_number}')]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220323 16:33:47.161" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[9482]')]</msg>
-<status status="PASS" starttime="20220323 16:33:47.161" endtime="20220323 16:33:47.161"/>
+<msg timestamp="20220405 16:16:28.598" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[6606]')]</msg>
+<status status="PASS" starttime="20220405 16:16:28.598" endtime="20220405 16:16:28.598"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${created_report_l}</var>
 <arg>//div[contains(text(), 'Automation Report${random_number}')]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220323 16:33:47.161" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[9482]')]</msg>
-<status status="PASS" starttime="20220323 16:33:47.161" endtime="20220323 16:33:47.161"/>
+<msg timestamp="20220405 16:16:28.599" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[6606]')]</msg>
+<status status="PASS" starttime="20220405 16:16:28.599" endtime="20220405 16:16:28.599"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220323 16:33:47.161" endtime="20220323 16:33:47.166"/>
+<status status="PASS" starttime="20220405 16:16:28.600" endtime="20220405 16:16:28.601"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220323 16:33:47.167" endtime="20220323 16:33:47.168"/>
+<status status="PASS" starttime="20220405 16:16:28.602" endtime="20220405 16:16:28.602"/>
 </kw>
 <kw name="When fill the login form" library="keywords_LoginPage">
 <arg>umut</arg>
@@ -69,263 +69,263 @@
 <arg>${username_l}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:33:47.170" endtime="20220323 16:33:48.967"/>
+<status status="PASS" starttime="20220405 16:16:28.603" endtime="20220405 16:16:30.393"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220323 16:33:48.971" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220323 16:33:48.969" endtime="20220323 16:33:50.790"/>
+<msg timestamp="20220405 16:16:30.395" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220405 16:16:30.394" endtime="20220405 16:16:32.037"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_l}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220323 16:33:50.791" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg timestamp="20220323 16:33:51.875" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220323 16:33:52.573" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220323 16:33:50.790" endtime="20220323 16:33:52.573"/>
+<msg timestamp="20220405 16:16:32.038" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220405 16:16:33.101" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220405 16:16:33.778" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220405 16:16:32.037" endtime="20220405 16:16:33.778"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:47.168" endtime="20220323 16:33:52.574"/>
+<status status="PASS" starttime="20220405 16:16:28.603" endtime="20220405 16:16:33.778"/>
 </kw>
 <kw name="And click login buton" library="keywords_LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:33:52.576" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20220323 16:33:52.575" endtime="20220323 16:33:53.723"/>
+<msg timestamp="20220405 16:16:33.779" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220405 16:16:33.779" endtime="20220405 16:16:34.861"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:52.575" endtime="20220323 16:33:53.723"/>
+<status status="PASS" starttime="20220405 16:16:33.779" endtime="20220405 16:16:34.861"/>
 </kw>
 <kw name="And click Report Management" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${report_management_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:33:53.725" endtime="20220323 16:33:55.827"/>
+<status status="PASS" starttime="20220405 16:16:34.862" endtime="20220405 16:16:36.940"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${report_management_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:33:55.829" level="INFO">Clicking element 'xpath://div[normalize-space()='Report Management']'.</msg>
-<status status="PASS" starttime="20220323 16:33:55.828" endtime="20220323 16:33:57.008"/>
+<msg timestamp="20220405 16:16:36.943" level="INFO">Clicking element 'xpath://div[normalize-space()='Report Management']'.</msg>
+<status status="PASS" starttime="20220405 16:16:36.941" endtime="20220405 16:16:38.079"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:53.724" endtime="20220323 16:33:57.009"/>
+<status status="PASS" starttime="20220405 16:16:34.862" endtime="20220405 16:16:38.080"/>
 </kw>
 <kw name="And click Reports" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${reports_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:33:57.010" endtime="20220323 16:33:58.087"/>
+<status status="PASS" starttime="20220405 16:16:38.081" endtime="20220405 16:16:39.134"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${reports_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:33:58.089" level="INFO">Clicking element 'xpath://div[normalize-space()='Reports']'.</msg>
-<status status="PASS" starttime="20220323 16:33:58.088" endtime="20220323 16:33:59.586"/>
+<msg timestamp="20220405 16:16:39.137" level="INFO">Clicking element 'xpath://div[normalize-space()='Reports']'.</msg>
+<status status="PASS" starttime="20220405 16:16:39.135" endtime="20220405 16:16:40.289"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:57.010" endtime="20220323 16:33:59.587"/>
+<status status="PASS" starttime="20220405 16:16:38.080" endtime="20220405 16:16:40.289"/>
 </kw>
 <kw name="And click New Report" library="keywords_reportListPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${new_report_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:33:59.588" endtime="20220323 16:34:00.739"/>
+<status status="PASS" starttime="20220405 16:16:40.290" endtime="20220405 16:16:41.369"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${new_report_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:00.740" level="INFO">Clicking element '//span[contains(text(),'Add New Report')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:00.739" endtime="20220323 16:34:02.416"/>
+<msg timestamp="20220405 16:16:41.370" level="INFO">Clicking element '//span[contains(text(),'Add New Report')]'.</msg>
+<status status="PASS" starttime="20220405 16:16:41.369" endtime="20220405 16:16:42.771"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:59.587" endtime="20220323 16:34:02.417"/>
+<status status="PASS" starttime="20220405 16:16:40.289" endtime="20220405 16:16:42.771"/>
 </kw>
 <kw name="And write Report Title" library="keywords_reportListPage">
 <arg>${random_number}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${report_title_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:02.418" endtime="20220323 16:34:03.475"/>
+<status status="PASS" starttime="20220405 16:16:42.774" endtime="20220405 16:16:43.846"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${report_title_l}</arg>
 <arg>Automation Report${random_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:03.478" level="INFO">Typing text 'Automation Report[9482]' into text field '//span/label/div/div/div/input'.</msg>
-<status status="PASS" starttime="20220323 16:34:03.477" endtime="20220323 16:34:05.652"/>
+<msg timestamp="20220405 16:16:43.848" level="INFO">Typing text 'Automation Report[6606]' into text field '//span/label/div/div/div/input'.</msg>
+<status status="PASS" starttime="20220405 16:16:43.847" endtime="20220405 16:16:45.908"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:02.418" endtime="20220323 16:34:05.652"/>
+<status status="PASS" starttime="20220405 16:16:42.772" endtime="20220405 16:16:45.908"/>
 </kw>
 <kw name="And choose Category" library="keywords_reportListPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${report_category_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:05.654" endtime="20220323 16:34:06.700"/>
+<status status="PASS" starttime="20220405 16:16:45.909" endtime="20220405 16:16:46.942"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${report_category_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:06.701" level="INFO">Clicking element '//div[2]/input'.</msg>
-<status status="PASS" starttime="20220323 16:34:06.701" endtime="20220323 16:34:07.869"/>
+<msg timestamp="20220405 16:16:46.943" level="INFO">Clicking element '//div[2]/input'.</msg>
+<status status="PASS" starttime="20220405 16:16:46.942" endtime="20220405 16:16:48.330"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${report_category_l}</arg>
 <arg>ARROW_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220323 16:34:07.871" level="INFO">Sending key(s) ('ARROW_DOWN',) to //div[2]/input element.</msg>
-<msg timestamp="20220323 16:34:09.199" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
-<msg timestamp="20220323 16:34:09.199" level="INFO">Releasing special key ARROW_DOWN.</msg>
-<status status="PASS" starttime="20220323 16:34:07.869" endtime="20220323 16:34:09.714"/>
+<msg timestamp="20220405 16:16:48.333" level="INFO">Sending key(s) ('ARROW_DOWN',) to //div[2]/input element.</msg>
+<msg timestamp="20220405 16:16:49.655" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
+<msg timestamp="20220405 16:16:49.655" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220405 16:16:48.330" endtime="20220405 16:16:50.200"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${report_category_l}</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220323 16:34:09.717" level="INFO">Sending key(s) ('RETURN',) to //div[2]/input element.</msg>
-<msg timestamp="20220323 16:34:11.014" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20220323 16:34:11.014" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220323 16:34:09.715" endtime="20220323 16:34:11.583"/>
+<msg timestamp="20220405 16:16:50.201" level="INFO">Sending key(s) ('RETURN',) to //div[2]/input element.</msg>
+<msg timestamp="20220405 16:16:51.489" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20220405 16:16:51.490" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220405 16:16:50.201" endtime="20220405 16:16:52.052"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:05.653" endtime="20220323 16:34:11.584"/>
+<status status="PASS" starttime="20220405 16:16:45.909" endtime="20220405 16:16:52.053"/>
 </kw>
 <kw name="And click Save" library="keywords_reportListPage">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220323 16:34:11.588" level="INFO">Executing JavaScript:
+<msg timestamp="20220405 16:16:52.054" level="INFO">Executing JavaScript:
 window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220323 16:34:11.586" endtime="20220323 16:34:12.103"/>
+<status status="PASS" starttime="20220405 16:16:52.054" endtime="20220405 16:16:52.571"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${report_Save_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:12.104" endtime="20220323 16:34:13.168"/>
+<status status="PASS" starttime="20220405 16:16:52.572" endtime="20220405 16:16:53.607"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${report_Save_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:13.170" level="INFO">Clicking element '//span[contains(text(),'Save')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:13.169" endtime="20220323 16:34:14.311"/>
+<msg timestamp="20220405 16:16:53.608" level="INFO">Clicking element '//span[contains(text(),'Save')]'.</msg>
+<status status="PASS" starttime="20220405 16:16:53.607" endtime="20220405 16:16:54.689"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class='q-img__content absolute-full']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:14.312" endtime="20220323 16:34:15.393"/>
+<status status="PASS" starttime="20220405 16:16:54.691" endtime="20220405 16:16:55.832"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:11.585" endtime="20220323 16:34:15.393"/>
+<status status="PASS" starttime="20220405 16:16:52.053" endtime="20220405 16:16:55.832"/>
 </kw>
 <kw name="And search report on report list screen" library="keywords_reportListPage">
 <arg>${random_number}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${search_bar_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:15.393" endtime="20220323 16:34:16.431"/>
+<status status="PASS" starttime="20220405 16:16:55.834" endtime="20220405 16:16:56.877"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${search_bar_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:16.432" level="INFO">Clicking element '//input[@placeholder='Search']'.</msg>
-<status status="PASS" starttime="20220323 16:34:16.431" endtime="20220323 16:34:17.553"/>
+<msg timestamp="20220405 16:16:56.878" level="INFO">Clicking element '//input[@placeholder='Search']'.</msg>
+<status status="PASS" starttime="20220405 16:16:56.878" endtime="20220405 16:16:57.946"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${search_bar_l}</arg>
 <arg>Automation Report${random_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:17.554" level="INFO">Typing text 'Automation Report[9482]' into text field '//input[@placeholder='Search']'.</msg>
-<status status="PASS" starttime="20220323 16:34:17.553" endtime="20220323 16:34:19.244"/>
+<msg timestamp="20220405 16:16:57.947" level="INFO">Typing text 'Automation Report[6606]' into text field '//input[@placeholder='Search']'.</msg>
+<status status="PASS" starttime="20220405 16:16:57.946" endtime="20220405 16:16:59.552"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:15.393" endtime="20220323 16:34:19.245"/>
+<status status="PASS" starttime="20220405 16:16:55.833" endtime="20220405 16:16:59.553"/>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20220323 16:34:19.246" endtime="20220323 16:34:21.311"/>
+<status status="PASS" starttime="20220405 16:16:59.554" endtime="20220405 16:17:00.911"/>
 </kw>
 <kw name="And click My Reports" library="keywords_reportListPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${my_reports_l}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:21.313" endtime="20220323 16:34:25.110"/>
+<status status="PASS" starttime="20220405 16:17:00.915" endtime="20220405 16:17:03.859"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${my_reports_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:25.115" level="INFO">Clicking element '//div[normalize-space()='My Reports']'.</msg>
-<status status="PASS" starttime="20220323 16:34:25.111" endtime="20220323 16:34:26.349"/>
+<msg timestamp="20220405 16:17:03.861" level="INFO">Clicking element '//div[normalize-space()='My Reports']'.</msg>
+<status status="PASS" starttime="20220405 16:17:03.860" endtime="20220405 16:17:05.028"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:21.311" endtime="20220323 16:34:26.350"/>
+<status status="PASS" starttime="20220405 16:17:00.912" endtime="20220405 16:17:05.029"/>
 </kw>
 <kw name="And click Report that created" library="keywords_reportListPage">
 <arg>${created_report_l}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${created_report_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:26.354" endtime="20220323 16:34:27.432"/>
+<status status="PASS" starttime="20220405 16:17:05.030" endtime="20220405 16:17:06.076"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${created_report_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:27.433" level="INFO">Clicking element '//div[contains(text(), 'Automation Report[9482]')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:27.432" endtime="20220323 16:34:28.938"/>
+<msg timestamp="20220405 16:17:06.082" level="INFO">Clicking element '//div[contains(text(), 'Automation Report[6606]')]'.</msg>
+<status status="PASS" starttime="20220405 16:17:06.080" endtime="20220405 16:17:07.328"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:26.352" endtime="20220323 16:34:28.939"/>
+<status status="PASS" starttime="20220405 16:17:05.029" endtime="20220405 16:17:07.328"/>
 </kw>
 <kw name="And add widget" library="keywords_reportWidgetPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${add_widget_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:28.944" endtime="20220323 16:34:30.042"/>
+<status status="PASS" starttime="20220405 16:17:07.329" endtime="20220405 16:17:08.375"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${add_widget_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:30.046" level="INFO">Clicking element '//span[normalize-space()='Add Widget']'.</msg>
-<status status="PASS" starttime="20220323 16:34:30.044" endtime="20220323 16:34:32.287"/>
+<msg timestamp="20220405 16:17:08.377" level="INFO">Clicking element '//span[normalize-space()='Add Widget']'.</msg>
+<status status="PASS" starttime="20220405 16:17:08.376" endtime="20220405 16:17:09.675"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:28.940" endtime="20220323 16:34:32.287"/>
+<status status="PASS" starttime="20220405 16:17:07.329" endtime="20220405 16:17:09.676"/>
 </kw>
 <kw name="and click text analytics widget" library="keywords_reportWidgetPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${text_analytics_widget_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:32.291" endtime="20220323 16:34:33.370"/>
+<status status="PASS" starttime="20220405 16:17:09.679" endtime="20220405 16:17:10.776"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${text_analytics_widget_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:33.370" level="INFO">Clicking element '//div[@class='q-tab__label'][normalize-space()='Text Analytics']'.</msg>
-<status status="PASS" starttime="20220323 16:34:33.370" endtime="20220323 16:34:34.550"/>
+<msg timestamp="20220405 16:17:10.778" level="INFO">Clicking element '//div[@class='q-tab__label'][normalize-space()='Text Analytics']'.</msg>
+<status status="PASS" starttime="20220405 16:17:10.777" endtime="20220405 16:17:11.911"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:32.289" endtime="20220323 16:34:34.552"/>
+<status status="PASS" starttime="20220405 16:17:09.677" endtime="20220405 16:17:11.912"/>
 </kw>
 <kw name="and click ai chart" library="keywords_reportWidgetPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ai_chart_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:34.553" endtime="20220323 16:34:35.633"/>
+<status status="PASS" starttime="20220405 16:17:11.916" endtime="20220405 16:17:12.972"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ai_chart_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:35.634" level="INFO">Clicking element '//div[contains(text(),'AI-Chart')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:35.633" endtime="20220323 16:34:36.750"/>
+<msg timestamp="20220405 16:17:12.974" level="INFO">Clicking element '//div[contains(text(),'AI-Chart')]'.</msg>
+<status status="PASS" starttime="20220405 16:17:12.972" endtime="20220405 16:17:14.061"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:34.553" endtime="20220323 16:34:36.750"/>
+<status status="PASS" starttime="20220405 16:17:11.914" endtime="20220405 16:17:14.063"/>
 </kw>
 <kw name="And click Impact Butterfly" library="keywords_reportWidgetPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${impact_butterfly_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:36.750" endtime="20220323 16:34:37.817"/>
+<status status="PASS" starttime="20220405 16:17:14.065" endtime="20220405 16:17:15.144"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${impact_butterfly_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:37.821" level="INFO">Clicking element '//img[@src='/statics/images/widgets/TextAnalyticsImpactButterflyChart.png']'.</msg>
-<status status="PASS" starttime="20220323 16:34:37.818" endtime="20220323 16:34:39.148"/>
+<msg timestamp="20220405 16:17:15.147" level="INFO">Clicking element '//img[@src='/statics/images/widgets/TextAnalyticsImpactButterflyChart.png']'.</msg>
+<status status="PASS" starttime="20220405 16:17:15.145" endtime="20220405 16:17:16.290"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:36.750" endtime="20220323 16:34:39.149"/>
+<status status="PASS" starttime="20220405 16:17:14.064" endtime="20220405 16:17:16.291"/>
 </kw>
 <kw name="And write Widget Title" library="keywords_reportWidgetPage">
 <arg>${widget_type}</arg>
@@ -333,16 +333,16 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${widget_title_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:39.149" endtime="20220323 16:34:40.233"/>
+<status status="PASS" starttime="20220405 16:17:16.291" endtime="20220405 16:17:17.361"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${widget_title_l}</arg>
 <arg>AutoWidget ${widget_Type} ${random_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:40.236" level="INFO">Typing text 'AutoWidget Impact Butterfly [9482]' into text field '(//input[@type='text'])[3]'.</msg>
-<status status="PASS" starttime="20220323 16:34:40.233" endtime="20220323 16:34:43.913"/>
+<msg timestamp="20220405 16:17:17.362" level="INFO">Typing text 'AutoWidget Impact Butterfly [6606]' into text field '(//input[@type='text'])[3]'.</msg>
+<status status="PASS" starttime="20220405 16:17:17.361" endtime="20220405 16:17:19.653"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:39.149" endtime="20220323 16:34:43.913"/>
+<status status="PASS" starttime="20220405 16:17:16.291" endtime="20220405 16:17:19.653"/>
 </kw>
 <kw name="And choose Layout" library="keywords_reportWidgetPage">
 <arg>2</arg>
@@ -351,171 +351,171 @@ Without any arguments.</msg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${layout_type1_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:43.915" endtime="20220323 16:34:43.916"/>
+<status status="NOT RUN" starttime="20220405 16:17:19.654" endtime="20220405 16:17:19.654"/>
 </kw>
-<status status="NOT RUN" starttime="20220323 16:34:43.915" endtime="20220323 16:34:43.916"/>
+<status status="NOT RUN" starttime="20220405 16:17:19.654" endtime="20220405 16:17:19.654"/>
 </branch>
 <branch type="ELSE IF" condition="${layout}==2">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${layout_type2_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:43.917" level="INFO">Clicking element '//div[contains(text(),'2 by 2 Display')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:43.916" endtime="20220323 16:34:45.162"/>
+<msg timestamp="20220405 16:17:19.655" level="INFO">Clicking element '//div[contains(text(),'2 by 2 Display')]'.</msg>
+<status status="PASS" starttime="20220405 16:17:19.655" endtime="20220405 16:17:20.782"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:43.916" endtime="20220323 16:34:45.163"/>
+<status status="PASS" starttime="20220405 16:17:19.654" endtime="20220405 16:17:20.782"/>
 </branch>
 <branch type="ELSE IF" condition="${layout}==3">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${layout_type3_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:45.165" endtime="20220323 16:34:45.165"/>
+<status status="NOT RUN" starttime="20220405 16:17:20.783" endtime="20220405 16:17:20.783"/>
 </kw>
-<status status="NOT RUN" starttime="20220323 16:34:45.164" endtime="20220323 16:34:45.166"/>
+<status status="NOT RUN" starttime="20220405 16:17:20.782" endtime="20220405 16:17:20.783"/>
 </branch>
-<status status="PASS" starttime="20220323 16:34:43.915" endtime="20220323 16:34:45.166"/>
+<status status="PASS" starttime="20220405 16:17:19.654" endtime="20220405 16:17:20.783"/>
 </if>
-<status status="PASS" starttime="20220323 16:34:43.914" endtime="20220323 16:34:45.167"/>
+<status status="PASS" starttime="20220405 16:17:19.653" endtime="20220405 16:17:20.783"/>
 </kw>
 <kw name="And choose impact Type" library="keywords_reportWidgetPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${impact_type_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:45.169" endtime="20220323 16:34:46.250"/>
+<status status="PASS" starttime="20220405 16:17:20.784" endtime="20220405 16:17:21.820"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${impact_type_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:46.252" level="INFO">Clicking element '(//input[@type='text'])[6]'.</msg>
-<status status="PASS" starttime="20220323 16:34:46.251" endtime="20220323 16:34:47.355"/>
+<msg timestamp="20220405 16:17:21.821" level="INFO">Clicking element '(//input[@type='text'])[6]'.</msg>
+<status status="PASS" starttime="20220405 16:17:21.820" endtime="20220405 16:17:22.921"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220323 16:34:47.357" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
-<msg timestamp="20220323 16:34:47.357" level="INFO">Pressing special key RETURN to browser.</msg>
-<msg timestamp="20220323 16:34:47.357" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220323 16:34:47.355" endtime="20220323 16:34:47.931"/>
+<msg timestamp="20220405 16:17:22.922" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20220405 16:17:22.922" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20220405 16:17:22.923" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220405 16:17:22.921" endtime="20220405 16:17:23.459"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:45.167" endtime="20220323 16:34:47.932"/>
+<status status="PASS" starttime="20220405 16:17:20.784" endtime="20220405 16:17:23.459"/>
 </kw>
 <kw name="And choose Topic Model for impact butterfly" library="keywords_reportWidgetPage">
 <arg>1</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${topic_model2_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:47.935" endtime="20220323 16:34:49.008"/>
+<status status="PASS" starttime="20220405 16:17:23.460" endtime="20220405 16:17:24.520"/>
 </kw>
 <if>
 <branch type="IF" condition="${topic_model_count}==1">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${topic_model2_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:49.011" level="INFO">Clicking element '(//*[name()='svg'][@class='vue-treeselect__control-arrow'])[6]'.</msg>
-<status status="PASS" starttime="20220323 16:34:49.010" endtime="20220323 16:34:50.224"/>
+<msg timestamp="20220405 16:17:24.526" level="INFO">Clicking element '(//*[name()='svg'][@class='vue-treeselect__control-arrow'])[6]'.</msg>
+<status status="PASS" starttime="20220405 16:17:24.524" endtime="20220405 16:17:25.670"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ARROW_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220323 16:34:50.225" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
-<msg timestamp="20220323 16:34:50.226" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
-<msg timestamp="20220323 16:34:50.226" level="INFO">Releasing special key ARROW_DOWN.</msg>
-<status status="PASS" starttime="20220323 16:34:50.224" endtime="20220323 16:34:50.748"/>
+<msg timestamp="20220405 16:17:25.672" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20220405 16:17:25.672" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20220405 16:17:25.672" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20220405 16:17:25.671" endtime="20220405 16:17:26.196"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220323 16:34:50.749" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
-<msg timestamp="20220323 16:34:50.749" level="INFO">Pressing special key RETURN to browser.</msg>
-<msg timestamp="20220323 16:34:50.749" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220323 16:34:50.748" endtime="20220323 16:34:51.325"/>
+<msg timestamp="20220405 16:17:26.197" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20220405 16:17:26.197" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20220405 16:17:26.197" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220405 16:17:26.197" endtime="20220405 16:17:26.769"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:49.009" endtime="20220323 16:34:51.325"/>
+<status status="PASS" starttime="20220405 16:17:24.520" endtime="20220405 16:17:26.770"/>
 </branch>
 <branch type="ELSE IF" condition="${topic_model_count}==2">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${topic_model2_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.326"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.771" endtime="20220405 16:17:26.772"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ARROW_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.326"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.773" endtime="20220405 16:17:26.773"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.326"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.774" endtime="20220405 16:17:26.774"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ARROW_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.326"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.775" endtime="20220405 16:17:26.776"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ARROW_DOWN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.326"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.776" endtime="20220405 16:17:26.777"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20220323 16:34:51.326" endtime="20220323 16:34:51.329"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.777" endtime="20220405 16:17:26.778"/>
 </kw>
-<status status="NOT RUN" starttime="20220323 16:34:51.325" endtime="20220323 16:34:51.329"/>
+<status status="NOT RUN" starttime="20220405 16:17:26.770" endtime="20220405 16:17:26.778"/>
 </branch>
-<status status="PASS" starttime="20220323 16:34:49.009" endtime="20220323 16:34:51.329"/>
+<status status="PASS" starttime="20220405 16:17:24.520" endtime="20220405 16:17:26.779"/>
 </if>
-<status status="PASS" starttime="20220323 16:34:47.933" endtime="20220323 16:34:51.330"/>
+<status status="PASS" starttime="20220405 16:17:23.459" endtime="20220405 16:17:26.779"/>
 </kw>
 <kw name="and click save" library="keywords_reportListPage">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220323 16:34:51.332" level="INFO">Executing JavaScript:
+<msg timestamp="20220405 16:17:26.783" level="INFO">Executing JavaScript:
 window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220323 16:34:51.331" endtime="20220323 16:34:51.844"/>
+<status status="PASS" starttime="20220405 16:17:26.781" endtime="20220405 16:17:27.305"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${report_Save_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:51.846" endtime="20220323 16:34:52.872"/>
+<status status="PASS" starttime="20220405 16:17:27.305" endtime="20220405 16:17:28.335"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${report_Save_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220323 16:34:52.873" level="INFO">Clicking element '//span[contains(text(),'Save')]'.</msg>
-<status status="PASS" starttime="20220323 16:34:52.872" endtime="20220323 16:34:54.094"/>
+<msg timestamp="20220405 16:17:28.336" level="INFO">Clicking element '//span[contains(text(),'Save')]'.</msg>
+<status status="PASS" starttime="20220405 16:17:28.335" endtime="20220405 16:17:29.440"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[@class='q-img__content absolute-full']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220323 16:34:54.095" endtime="20220323 16:34:55.390"/>
+<status status="PASS" starttime="20220405 16:17:29.440" endtime="20220405 16:17:30.497"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:51.331" endtime="20220323 16:34:55.391"/>
+<status status="PASS" starttime="20220405 16:17:26.780" endtime="20220405 16:17:30.497"/>
 </kw>
 <kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220323 16:34:55.394" endtime="20220323 16:34:58.003"/>
+<status status="PASS" starttime="20220405 16:17:30.498" endtime="20220405 16:17:33.100"/>
 </kw>
-<status status="PASS" starttime="20220323 16:34:55.392" endtime="20220323 16:34:58.004"/>
+<status status="PASS" starttime="20220405 16:17:30.497" endtime="20220405 16:17:33.100"/>
 </kw>
-<status status="PASS" starttime="20220323 16:33:42.809" endtime="20220323 16:34:58.005"/>
+<status status="PASS" starttime="20220405 16:16:25.749" endtime="20220405 16:17:33.100"/>
 </test>
 <doc>Impact Buuterfly Widget</doc>
-<status status="PASS" starttime="20220323 16:33:42.338" endtime="20220323 16:34:58.005"/>
+<status status="PASS" starttime="20220405 16:16:25.490" endtime="20220405 16:17:33.102"/>
 </suite>
-<status status="PASS" starttime="20220323 16:33:42.310" endtime="20220323 16:34:58.014"/>
+<status status="PASS" starttime="20220405 16:16:25.470" endtime="20220405 16:17:33.103"/>
 </suite>
 <statistics>
 <total>
