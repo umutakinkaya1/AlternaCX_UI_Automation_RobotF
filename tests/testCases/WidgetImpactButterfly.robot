@@ -41,4 +41,9 @@ Adding New Butterfly Widget to Report
     And choose impact Type
     And choose Topic Model for impact butterfly      1
     and click save
+    and click report management
+    and click reports
+    and search report on report list screen     ${random_number}
+    and click delete icon
+    and click delete button
 

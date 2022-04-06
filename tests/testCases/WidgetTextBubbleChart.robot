@@ -60,7 +60,12 @@ Adding New Text Bubble Chart Widget to Report
     And click Emotion Analysis Toggle
     And click Save
     set selenium speed      2
-    wait until element is visible     //div[@class='q-img__content absolute-full']
+    and click report management
+    and click reports
+    and search report on report list screen     ${random_number}
+    and click delete icon
+    and click delete button
+
 
 
 

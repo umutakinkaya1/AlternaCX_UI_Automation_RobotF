@@ -37,4 +37,9 @@ NPS Trend
     and choose data type
     and choose category type
     and click save
+    and click report management
+    and click reports
+    and search report on report list screen     ${random_number}
+    and click delete icon
+    and click delete button
 

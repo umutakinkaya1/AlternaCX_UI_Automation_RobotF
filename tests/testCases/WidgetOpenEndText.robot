@@ -38,3 +38,8 @@ Open End text Widget
     and choose question
     and choose nps question
     and click save
+    and click report management
+    and click reports
+    and search report on report list screen     ${random_number}
+    and click delete icon
+    and click delete button

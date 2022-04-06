@@ -39,3 +39,12 @@ click Report that created
      [Arguments]     ${created_report_l}
      wait until element is visible      ${created_report_l}
      click element      ${created_report_l}
+
+click delete icon
+    wait until element is visible      ${delete_icon_l}
+    click element      ${delete_icon_l}
+
+click delete button
+    wait until element is visible      ${delete_button_l}
+    click element      ${delete_button_l}
+    wait until element is visible       //div[@class='q-img__content absolute-full']

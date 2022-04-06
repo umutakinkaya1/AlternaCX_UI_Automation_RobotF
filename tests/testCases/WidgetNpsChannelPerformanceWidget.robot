@@ -37,4 +37,9 @@ NPS Channel Performance Widget Create
     and choose layout       2
     and choose transaction channel
     and click save
+    and click report management
+    and click reports
+    and search report on report list screen     ${random_number}
+    and click delete icon
+    and click delete button
 
