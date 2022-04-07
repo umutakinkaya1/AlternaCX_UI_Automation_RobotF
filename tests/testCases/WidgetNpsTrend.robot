@@ -16,7 +16,7 @@ NPS Trend
     ${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
     ${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
     set selenium timeout        20
-    set selenium speed      0.5
+    set selenium speed      1
     When fill the login form    umut    Hacettepe2019
     And click login buton
     And click Report Management
