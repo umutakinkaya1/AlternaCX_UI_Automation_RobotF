@@ -1,7 +1,7 @@
-datasources:c593c5fe438c4e0ba89255610b62c756e5a9cd5c
+datasources:151fce3df97dfeb67cf6e96c4b388c1fabde2536
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:24bac5e56bbe6b3b22cc93b919cf9a49f817fc66
+file:4b94e54e65df4c71a1b78cb54820a592d0c80349
 --suite testCases.AlertIconVisibility
 --suite testCases.Login
 --suite testCases.QuotaScheduleLimit
@@ -19,3 +19,4 @@ file:24bac5e56bbe6b3b22cc93b919cf9a49f817fc66
 --suite testCases.WidgetNpsTrend
 --suite testCases.WidgetOpenEndText
 --suite testCases.SurveyInvitation
+--suite testCases.WidgetAiTables

@@ -7,12 +7,26 @@ Survey Audience Criteria Check                                        | PASS |
 ------------------------------------------------------------------------------
 Survey Audience And/Or                                                | PASS |
 ------------------------------------------------------------------------------
-Survey Audience Delete All Criteria                                   | PASS |
+Survey Audience Delete All Criteria                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:42
+    T:  Survey Audience Delete All Criteria    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:51
+      And click Delete criteria button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\surveyEditPage\keywords_surveyEditPage.robot:69
+      Mouse Over    ${delete_creteria_but_l}
+      |  ${delete_creteria_but_l} = xpath://i[@class='acx acx-i-trash-o q-icon notranslate'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://i[@class='acx acx-i-trash-o q-icon notranslate']' not found.
 ------------------------------------------------------------------------------
-testCases.SurveyAudience :: Survey Audience                           | PASS |
-3 tests, 3 passed, 0 failed
+testCases.SurveyAudience :: Survey Audience                           | FAIL |
+3 tests, 2 passed, 1 failed
 ==============================================================================
-testCases                                                             | PASS |
-3 tests, 3 passed, 0 failed
+testCases                                                             | FAIL |
+3 tests, 2 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\4\output.xml

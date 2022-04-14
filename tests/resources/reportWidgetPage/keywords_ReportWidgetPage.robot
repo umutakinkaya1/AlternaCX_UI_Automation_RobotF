@@ -22,13 +22,16 @@ click Text Bubble Chart Widget
 write Widget Title
     [Arguments]     ${widget_type}      ${random_number}
     wait until element is visible       ${widget_title_l}
-    input text     ${widget_title_l}    AutoWidget ${widget_Type} ${random_number}
+    press keys      None       TAB
+    press keys      None       TAB
+    press keys      None       AutoWidget ${widget_Type} ${random_number}
+    #input text     ${widget_title_l}    AutoWidget ${widget_Type} ${random_number}
 
 choose Data Type
     wait until element is visible       ${data_type_l}
     click element       ${data_type_l}
-    press keys  ${data_type_l}    ARROW_DOWN
-    press keys  ${data_type_l}    RETURN
+    press keys  None    ARROW_DOWN
+    press keys  None    RETURN
 
 choose Layout
     [Arguments]     ${layout}
@@ -146,4 +149,44 @@ choose nps question
     wait until element is visible       ${nps_question_l}
     click element       ${nps_question_l}
     press keys      None        RETURN
+
+click Branch Sentiment Widget
+    wait until element is visible       ${branch_sent_l}
+    click element       ${branch_sent_l}
+
+choose Channel Hierarchy Level
+    wait until element is visible       ${chn_hie_lvl_l}
+    click element       ${chn_hie_lvl_l}
+    press keys      None        RETURN
+
+choose Parent Channel Hierarchy Level
+    wait until element is visible       ${parent_chn_hie_lvl_l}
+    click element       ${parent_chn_hie_lvl_l}
+    press keys      None        RETURN
+
+click Branch Topic Widget
+    wait until element is visible       ${branch_topic_l}
+    click element       ${branch_topic_l}
+
+choose Topic Model for Branch Topics
+    wait until element is visible       ${branch_topic_model_l}
+    click element       ${branch_topic_model_l}
+    press keys      None        RETURN
+
+click Oetx and Topics
+    wait until element is visible       ${oetx_widget_l}
+    click element       ${oetx_widget_l}
+
+click Nps Impact Analysis Widget
+    wait until element is visible       ${nps_impact_anlys_widget_l}
+    click element       ${nps_impact_anlys_widget_l}
+
+choose Topic Model for Nps Impact Analysis
+    wait until element is visible       ${nps_impact_anyls_l}
+    click element       ${nps_impact_anyls_l}
+    press keys      None        RETURN
+
+click Ai Table
+    wait until element is visible       ${ai_table_l}
+    click element        ${ai_table_l}
 
