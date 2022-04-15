@@ -9,7 +9,7 @@ Test Setup  open the browser with ALternaWebPage
 Test Teardown   close browser session
 
 *** Test Cases ***
-Survey Audience Criteria Check
+Survey Audience Criteria Check , Survey Audience And/Or , Survey Audience Delete All Criteria
     set selenium timeout        20
     When fill the login form    umut    Hacettepe2019
     And click login buton
@@ -24,30 +24,11 @@ Survey Audience Criteria Check
    # And add audience criteria
     And add criteria for 1st item
     And click save and continue button
-
-Survey Audience And/Or
-    set selenium timeout        20
-    set selenium speed      2
-    When fill the login form    umut    Hacettepe2019
-    And click login buton
-    And click survey management
-    And click Surveys
-    And click Searchbar And Search Temp Survey and click it
     And click Audience
-    And click Audience criteria arrow
     And click Add button
     And add criteria for 2st item
     And click save and continue button
-
-Survey Audience Delete All Criteria
-    set selenium timeout        20
-    When fill the login form    umut    Hacettepe2019
-    And click login buton
-    And click survey management
-    And click Surveys
-    And click Searchbar And Search Temp Survey and click it
     And click Audience
-    And click Audience criteria arrow
     And click Delete criteria button
     And click Delete criteria button
     And click save and continue button

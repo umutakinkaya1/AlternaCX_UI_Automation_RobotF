@@ -20,6 +20,7 @@ set active the Refresh quota periodically
     click element   ${refresh_quota_period_toggle_l}
 
 click Audience
+    Execute JavaScript    window.scrollTo(document.body.scrollHeight,0)
     wait until element is visible   ${audience_l}
     click element       ${audience_l}
 
