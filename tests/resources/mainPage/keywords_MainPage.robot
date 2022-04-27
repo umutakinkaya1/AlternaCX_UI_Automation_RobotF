@@ -16,6 +16,7 @@ click Surveys
     click element   ${surveys_l}
 
 click Report Management
+    set selenium speed      1
     wait until element is visible   ${report_management_l}
     click element   ${report_management_l}
 

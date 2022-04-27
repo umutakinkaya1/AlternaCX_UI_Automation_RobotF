@@ -20,6 +20,7 @@ choose Category
     press keys  ${report_category_l}    RETURN
 
 click Save
+    set selenium speed      1
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     wait until element is visible       ${report_Save_l}
     click element   ${report_Save_l}
