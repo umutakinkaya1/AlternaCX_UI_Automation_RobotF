@@ -3,30 +3,55 @@ testCases
 ==============================================================================
 testCases.SurveyAudience :: Survey Audience                                   
 ==============================================================================
-Survey Audience Criteria Check                                        | PASS |
-------------------------------------------------------------------------------
-Survey Audience And/Or                                                | PASS |
-------------------------------------------------------------------------------
-Survey Audience Delete All Criteria                                     
+Survey Audience Criteria Check , Survey Audience And/Or , Survey A...   
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:42
-    T:  Survey Audience Delete All Criteria    
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:12
+    T:  Survey Audience Criteria Check , Survey Audience And/Or , Survey Audience Delete All Criteria    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:51
-      And click Delete criteria button    
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:21
+      And click Add button    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\surveyEditPage\keywords_surveyEditPage.robot:69
-      Mouse Over    ${delete_creteria_but_l}
-      |  ${delete_creteria_but_l} = xpath://i[@class='acx acx-i-trash-o q-icon notranslate'] (str)
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\surveyEditPage\keywords_surveyEditPage.robot:33
+      Click Element    ${add_button_l}
+      |  ${add_button_l} = xpath://button[@class='q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle text-black q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--wrap']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row'] (str)
 ______________________________________________________________________________
 | FAIL |
-Element with locator 'xpath://i[@class='acx acx-i-trash-o q-icon notranslate']' not found.
+ElementClickInterceptedException: Message: element click intercepted: Element <span class="q-btn__content text-center col items-center q-anchor--skip justify-center row">...</span> is not clickable at point (756, 550). Other element would receive the click: <div class="q-toolbar__title ellipsis">...</div>
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009E9943+2595139]
+	Ordinal0 [0x0097C9F1+2148849]
+	Ordinal0 [0x00874528+1066280]
+	Ordinal0 [0x008A7621+1275425]
+	Ordinal0 [0x008A5657+1267287]
+	Ordinal0 [0x008A333B+1258299]
+	Ordinal0 [0x008A207D+1253501]
+	Ordinal0 [0x00897AB3+1211059]
+	Ordinal0 [0x008BB9EC+1358316]
+	Ordinal0 [0x00897474+1209460]
+	Ordinal0 [0x008BBC04+1358852]
+	Ordinal0 [0x008CBAF2+1424114]
+	Ordinal0 [0x008BB806+1357830]
+	Ordinal0 [0x00896086+1204358]
+	Ordinal0 [0x00896F96+1208214]
+	GetHandleVerifier [0x00B8B232+1658114]
+	GetHandleVerifier [0x00C4312C+2411516]
+	GetHandleVerifier [0x00A7F261+560433]
+	GetHandleVerifier [0x00A7E366+556598]
+	Ordinal0 [0x0098286B+2173035]
+	Ordinal0 [0x009875F8+2192888]
+	Ordinal0 [0x009876E5+2193125]
+	Ordinal0 [0x009911FC+2232828]
+	BaseThreadInitThunk [0x7686FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A27A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77A27A6E+238]
 ------------------------------------------------------------------------------
 testCases.SurveyAudience :: Survey Audience                           | FAIL |
-3 tests, 2 passed, 1 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 testCases                                                             | FAIL |
-3 tests, 2 passed, 1 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\4\output.xml
