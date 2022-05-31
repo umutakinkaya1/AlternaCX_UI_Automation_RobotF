@@ -1,1 +1,1 @@
-pabot --processes 4 -d ..\reports\ .
+pabot --processes 3 -d ..\reports\ .
