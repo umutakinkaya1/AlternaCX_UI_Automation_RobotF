@@ -190,3 +190,7 @@ click Ai Table
     wait until element is visible       ${ai_table_l}
     click element        ${ai_table_l}
 
+click Comment Highlight Chart
+    wait until element is visible       ${comm_high_l}
+    click element        ${comm_high_l}
+

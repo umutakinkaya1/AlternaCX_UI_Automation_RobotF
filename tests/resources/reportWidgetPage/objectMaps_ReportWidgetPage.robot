@@ -37,3 +37,4 @@ ${oetx_widget_l}                    (//img[@src='/statics/images/widgets/OetxRel
 ${nps_impact_anlys_widget_l}        (//img[@src='/statics/images/widgets/TopImpactTable.png'])[1]
 ${nps_impact_anyls_l}               (//div[@class='vue-treeselect__multi-value'])[1]
 ${ai_table_l}                       (//div[contains(text(),'AI-Table')])[1]
+${comm_high_l}                      //img[@src='/statics/images/widgets/CommentsHighlightChart.png']
