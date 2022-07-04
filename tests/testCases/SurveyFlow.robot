@@ -11,7 +11,20 @@ Test Setup  open the browser with ALternaWebPage
 Test Teardown   close browser session
 
 *** Test Cases ***
-Survey Question Types And Flow Check
+Survey Flow Check
+set selenium timeout        20
+    set selenium speed      1
+    When fill the login form    umut    Hacettepe2019
+    And click login buton
+    When click Survey Management
+    And click Surveys
+    And click Searchbar And Search Survey and click it      Hic est Temptare
+    And click Questions and Flows
+    And click Flow Management
+    And click Flow Diagram
+    And click save and continue button
+
+Survey Question Types
     ${random_number}=    Evaluate    random.sample(range(4, 10), 1)    random
     set selenium timeout        20
     set selenium speed      1
@@ -22,6 +35,6 @@ Survey Question Types And Flow Check
     And click Searchbar And Search Survey and click it      Survey Flow Umut
     And click Questions and Flows
     And click Add new Question
-    And click random new question type      ${random_number}
+    #And click random new question type      ${random_number}
 
 
