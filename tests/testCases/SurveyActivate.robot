@@ -17,7 +17,7 @@ Survey Preview
     And click login buton
     And click survey management
     And click Surveys
-    And click Searchbar And Search Temp Survey and click it
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click activate
     And click preview start button
     Then assert survey title

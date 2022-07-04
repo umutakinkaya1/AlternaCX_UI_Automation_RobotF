@@ -11,12 +11,12 @@ Test Teardown   close browser session
 *** Test Cases ***
 Quota Scheduole Limit Check
     set selenium timeout        20
-    set selenium speed      2
+    set selenium speed      1
     When fill the login form    umut    Hacettepe2019
     And click login buton
     When click Survey Management
     And click Surveys
-    And click Searchbar And Search Temp Survey and click it
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click Quota Management
     And click new quota
     And click Actions

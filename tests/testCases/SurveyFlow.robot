@@ -1,26 +1,27 @@
 *** Settings ***
-Documentation   Survey Communication Rule
+Documentation   Survey Flow
 Library     SeleniumLibrary
 Library     BuiltIn
 Resource    ../resources/loginPage/keywords_LoginPage.robot
 Resource    ../resources/mainPage/keywords_mainPage.robot
 Resource    ../resources/surveyEditPage/keywords_surveyEditPage.robot
 Resource    ../resources/surveyListPage/keywords_surveyListPage.robot
+Resource    ../resources/surveyEditPage/FlowPage/keywords_surveyEditPage_Flow.robot
 Test Setup  open the browser with ALternaWebPage
 Test Teardown   close browser session
 
 *** Test Cases ***
-Define Independent Rules in Survey Communication Rules
+Survey Question Types And Flow Check
+    ${random_number}=    Evaluate    random.sample(range(4, 10), 1)    random
     set selenium timeout        20
-    set selenium speed      2
+    set selenium speed      1
     When fill the login form    umut    Hacettepe2019
     And click login buton
-    And click survey management
+    When click Survey Management
     And click Surveys
-    And click Searchbar And Search Survey and click it      Hic Est Temptare
-    And click invitation
-    And click Other Preferences
-    And switch toggle of if invitee does not respond the invitation, send another invitation
-    And switch toggle of if invitee does not finish the survey, send a reminder
-    And switch toggle of use alternative invitation channels
-    And click Save
+    And click Searchbar And Search Survey and click it      Survey Flow Umut
+    And click Questions and Flows
+    And click Add new Question
+    And click random new question type      ${random_number}
+
+

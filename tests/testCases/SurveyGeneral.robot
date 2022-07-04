@@ -18,7 +18,7 @@ Survey Edit Title , Execution Title , Language
     And click login buton
     And click survey management
     And click Surveys
-    And click Searchbar And Search Temp Survey and click it
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click general
     And change title to temp title
     And change survey language to english

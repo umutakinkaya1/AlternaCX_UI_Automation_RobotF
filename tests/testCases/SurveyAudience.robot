@@ -16,7 +16,7 @@ Survey Audience Criteria Check , Survey Audience And/Or , Survey Audience Delete
     And click login buton
     And click survey management
     And click Surveys
-    And click Searchbar And Search Temp Survey and click it
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click Audience
     And click Audience criteria arrow
     And click Add button

@@ -8,11 +8,13 @@ click Searchbar And Search Temp Survey
     wait until element is visible   ${search_bar_l}
     input text      ${search_bar_l}    Hic est temptare
     wait until element is visible   ${temp_survey_l}
-click Searchbar And Search Temp Survey and click it
+
+click Searchbar And Search Survey and click it
+    [Arguments]     ${surveyTitle}
     wait until element is visible   ${search_bar_l}
-    input text      ${search_bar_l}    Hic est temptare
-    wait until element is visible   ${temp_survey_l}
-    click element   ${temp_survey_l}
+    input text      ${search_bar_l}    ${surveyTitle}
+    wait until element is visible   (//a[@class='acx-list-link'])[2]
+    click element   (//a[@class='acx-list-link'])[2]
 
 click title on table
     wait until element is visible       ${title_l}

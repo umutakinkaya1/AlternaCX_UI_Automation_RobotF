@@ -18,7 +18,7 @@ Survey Invitation
     And click login buton
     And click survey management
     And click Surveys
-    And click Searchbar And Search Temp Survey and click it
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click invitation
     And click delete touchpoint
     And click delete

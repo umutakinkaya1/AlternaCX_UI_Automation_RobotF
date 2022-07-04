@@ -17,7 +17,7 @@ SurveyList Ordering, Status Activate-Deactivate,
     And click survey management
     And click Surveys
     And click title on table
-    And click Searchbar And Search Temp Survey
+    And click Searchbar And Search Survey and click it      Hic Est Temptare
     And click survey activate toggle
     And click survey activate toggle
 
