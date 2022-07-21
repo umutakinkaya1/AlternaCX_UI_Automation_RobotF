@@ -33,4 +33,4 @@ click save and return to list
     wait until element is visible   ${save_and_return_but_l}
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     click element       ${save_and_return_but_l}
-    wait until element is visible       //a[normalize-space()='1']
+    wait until element is visible       //div[@class='q-img__content absolute-full']

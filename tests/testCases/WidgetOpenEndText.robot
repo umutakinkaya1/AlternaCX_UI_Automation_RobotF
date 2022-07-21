@@ -16,7 +16,7 @@ Open End text Widget
     ${created_report_l}     set variable        //div[contains(text(), 'Automation Report${random_number}')]
     set selenium timeout        20
     set selenium speed      0.5
-    When fill the login form    umut    Hacettepe2019
+    When fill the login form    system      Aa3456
     And click login buton
     And click Report Management
     And click Reports

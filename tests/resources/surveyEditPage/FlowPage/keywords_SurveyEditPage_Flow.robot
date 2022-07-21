@@ -22,9 +22,11 @@ click random new question type
 
 
 click Flow Management
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     wait until element is visible       ${flow_man_l}
     click element       ${flow_man_l}
 
 click Flow Diagram
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     wait until element is visible       ${flow_diag_l}
     click element       ${flow_diag_l}

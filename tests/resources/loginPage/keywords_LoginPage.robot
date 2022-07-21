@@ -5,7 +5,7 @@ Resource    objectMaps_LoginPage.robot
 *** Keywords ***
 open the browser with ALternaWebPage
     create webdriver    Chrome  executable_path=tests/drivers/chromedriver.exe
-    go to   https://staging.alternacx.com/
+    go to   https://qastaging.alternacx.com/
     maximize browser window
 
 fill the login form

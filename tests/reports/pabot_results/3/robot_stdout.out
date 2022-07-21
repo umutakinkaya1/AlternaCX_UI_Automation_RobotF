@@ -1,14 +1,28 @@
 ==============================================================================
 testCases                                                                     
 ==============================================================================
-testCases.SurveyActivate :: Survey Activation, Preview On Survey Activation...
+testCases.SurveyAudience :: Survey Audience                                   
 ==============================================================================
-Survey Preview                                                        | PASS |
+Survey Audience Criteria Check , Survey Audience And/Or , Survey A...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:12
+    T:  Survey Audience Criteria Check , Survey Audience And/Or , Survey Audience Delete All Criteria    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyAudience.robot:27
+      And click save and continue button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\surveyEditPage\keywords_surveyEditPage.robot:81
+      Wait Until Element Is Visible    ${save_and_continue_but_l}
+      |  ${save_and_continue_but_l} = xpath://button[@class='q-btn q-btn-item non-selectable no-outline q-ml-sm float-right btn-saveAndContinue q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable q-btn--wrap']//span[@class='q-btn__wrapper col row q-anchor--skip'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://button[@class='q-btn q-btn-item non-selectable no-outline q-ml-sm float-right btn-saveAndContinue q-btn--outline q-btn--rectangle text-primary q-btn--actionable q-focusable q-hoverable q-btn--wrap']//span[@class='q-btn__wrapper col row q-anchor--skip']' not visible after 20 seconds.
 ------------------------------------------------------------------------------
-testCases.SurveyActivate :: Survey Activation, Preview On Survey A... | PASS |
-1 test, 1 passed, 0 failed
+testCases.SurveyAudience :: Survey Audience                           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-testCases                                                             | PASS |
-1 test, 1 passed, 0 failed
+testCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\3\output.xml

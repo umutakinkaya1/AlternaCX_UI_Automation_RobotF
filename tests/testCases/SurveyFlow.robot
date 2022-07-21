@@ -12,7 +12,7 @@ Test Teardown   close browser session
 
 *** Test Cases ***
 Survey Flow Check
-set selenium timeout        20
+    set selenium timeout        20
     set selenium speed      1
     When fill the login form    umut    Hacettepe2019
     And click login buton
@@ -28,7 +28,7 @@ Survey Question Types
     ${random_number}=    Evaluate    random.sample(range(4, 10), 1)    random
     set selenium timeout        20
     set selenium speed      1
-    When fill the login form    umut    Hacettepe2019
+    When fill the login form    system      Aa3456
     And click login buton
     When click Survey Management
     And click Surveys

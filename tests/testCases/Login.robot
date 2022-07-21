@@ -9,7 +9,7 @@ Test Teardown   close browser session
 Invalid Username
   #  set selenium speed  1
     #set selenium speed      2
-    When fill the login form    umut1   Hacettepe2019
+    When fill the login form    systemm      Aa3456
     And click login buton
     wait until element is visible   ${notification_message_l}
     ${notification_message} =   get text    ${notification_message_l}
@@ -18,7 +18,7 @@ Invalid Username
 Invalid Password
    # set selenium speed  1
     set selenium timeout        20
-    When fill the login form    umut   Hacettepe2029
+    When fill the login form    system      Aa34567
     And click login buton
     wait until element is visible   ${notification_message_l}
     ${notification_message} =   get text    ${notification_message_l}

@@ -1,15 +1,56 @@
 ==============================================================================
 testCases                                                                     
 ==============================================================================
-testCases.TopicModelList :: Survey Activation, Invitation , Preview On Surv...
+testCases.WidgetImpactButterfly :: Impact Buuterfly Widget                    
 ==============================================================================
-Topic Model List Existence Check                                      Mediamarkt Retail Model TR v3.0
-| PASS |
+Adding New Butterfly Widget to Report                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetImpactButterfly.robot:16
+    T:  Adding New Butterfly Widget to Report    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetImpactButterfly.robot:28
+      And write Report Title    ${random_number}
+      |  ${random_number} = [7010] (list)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportListPage\keywords_reportListPage.robot:13
+      Input Text    ${report_title_l}    Automation Report${random_number}
+      |  ${report_title_l} = //span/label/div/div/div/input (str)
+      |  Automation Report${random_number} = Automation Report[7010] (str)
+______________________________________________________________________________
+| FAIL |
+ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00316463+2188387]
+	Ordinal0 [0x002AE461+1762401]
+	Ordinal0 [0x001C3C40+801856]
+	Ordinal0 [0x001ECF63+970595]
+	Ordinal0 [0x001EC63E+968254]
+	Ordinal0 [0x0020C7DC+1099740]
+	Ordinal0 [0x001E7FF4+950260]
+	Ordinal0 [0x0020C9F4+1100276]
+	Ordinal0 [0x0021CC22+1166370]
+	Ordinal0 [0x0020C5F6+1099254]
+	Ordinal0 [0x001E6BE0+945120]
+	Ordinal0 [0x001E7AD6+948950]
+	GetHandleVerifier [0x005B71F2+2712546]
+	GetHandleVerifier [0x005A886D+2652765]
+	GetHandleVerifier [0x003A002A+520730]
+	GetHandleVerifier [0x0039EE06+516086]
+	Ordinal0 [0x002B468B+1787531]
+	Ordinal0 [0x002B8E88+1805960]
+	Ordinal0 [0x002B8F75+1806197]
+	Ordinal0 [0x002C1DF1+1842673]
+	BaseThreadInitThunk [0x76A4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F97A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F97A6E+238]
 ------------------------------------------------------------------------------
-testCases.TopicModelList :: Survey Activation, Invitation , Previe... | PASS |
-1 test, 1 passed, 0 failed
+testCases.WidgetImpactButterfly :: Impact Buuterfly Widget            | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-testCases                                                             | PASS |
-1 test, 1 passed, 0 failed
+testCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\8\output.xml

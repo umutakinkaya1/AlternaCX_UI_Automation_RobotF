@@ -1,10 +1,9 @@
-datasources:17d6fde4374e95b76027a2bdc8a4fc8d6900fa14
+datasources:df03911b2cfacce5dc850005964fd34cae96f45a
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:784ed3c5dad3ba84c56e9a11c6dcda3fa18e15ef
+file:f20f5a69eb43933835077b42e078c566fd2603ca
 --suite testCases.AlertIconVisibility
 --suite testCases.Login
---suite testCases.QuotaScheduleLimit
 --suite testCases.SurveyActivate
 --suite testCases.SurveyAudience
 --suite testCases.SurveyCommunicationRule
@@ -20,3 +19,6 @@ file:784ed3c5dad3ba84c56e9a11c6dcda3fa18e15ef
 --suite testCases.WidgetOpenEndText
 --suite testCases.SurveyInvitation
 --suite testCases.WidgetAiTables
+--suite testCases.SurveyFlow
+--suite testCases.SurveyQuotaScheduleLimit
+--suite testCases.WidgetCommentHighlight

@@ -12,7 +12,7 @@ Test Teardown   close browser session
 Survey Audience Criteria Check , Survey Audience And/Or , Survey Audience Delete All Criteria
     set selenium timeout        20
     set selenium speed      1
-    When fill the login form    umut    Hacettepe2019
+    When fill the login form    system      Aa3456
     And click login buton
     And click survey management
     And click Surveys

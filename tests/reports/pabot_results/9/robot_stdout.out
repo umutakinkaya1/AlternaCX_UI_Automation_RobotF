@@ -1,14 +1,27 @@
 ==============================================================================
 testCases                                                                     
 ==============================================================================
-testCases.WidgetImpactButterfly :: Impact Buuterfly Widget                    
+testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget                   
 ==============================================================================
-Adding New Butterfly Widget to Report                                 | PASS |
+Adding New Text Bubble Chart Widget to Report                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:15
+    T:  Adding New Text Bubble Chart Widget to Report    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetTextBubbleChart.robot:29
+      And click Save    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\User\PycharmProjects\RobotFramework\tests\resources\reportListPage\keywords_reportListPage.robot:27
+      Wait Until Element Is Visible    //div[@class='q-img__content absolute-full']
+______________________________________________________________________________
+| FAIL |
+Element '//div[@class='q-img__content absolute-full']' not visible after 20 seconds.
 ------------------------------------------------------------------------------
-testCases.WidgetImpactButterfly :: Impact Buuterfly Widget            | PASS |
-1 test, 1 passed, 0 failed
+testCases.WidgetTextBubbleChart :: Text Bubble Chart Widget           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-testCases                                                             | PASS |
-1 test, 1 passed, 0 failed
+testCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\User\PycharmProjects\RobotFramework\tests\reports\pabot_results\9\output.xml

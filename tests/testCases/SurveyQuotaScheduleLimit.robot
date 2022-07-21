@@ -12,7 +12,7 @@ Test Teardown   close browser session
 Quota Scheduole Limit Check
     set selenium timeout        20
     set selenium speed      1
-    When fill the login form    umut    Hacettepe2019
+    When fill the login form    system      Aa3456
     And click login buton
     When click Survey Management
     And click Surveys

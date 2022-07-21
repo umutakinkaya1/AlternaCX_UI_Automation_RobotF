@@ -1,290 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220422 14:07:12.043" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220721 13:51:24.487" rpa="false" schemaversion="2">
 <suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
-<suite id="s1-s1" name="SurveyCommunicationRule" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyCommunicationRule.robot">
-<test id="s1-s1-t1" name="Define Independent Rules in Survey Communication Rules">
+<suite id="s1-s1" name="SurveyGeneral" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\SurveyGeneral.robot">
+<test id="s1-s1-t1" name="Survey Edit Title , Execution Title , Language">
 <kw name="open the browser with ALternaWebPage" library="keywords_LoginPage" type="SETUP">
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>executable_path=tests/drivers/chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220422 14:07:12.539" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220422 14:07:12.539" endtime="20220422 14:07:15.591"/>
+<msg timestamp="20220721 13:51:24.775" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220721 13:51:24.775" endtime="20220721 13:51:26.013"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>https://staging.alternacx.com/</arg>
+<arg>https://qastaging.alternacx.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220422 14:07:15.592" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
-<status status="PASS" starttime="20220422 14:07:15.591" endtime="20220422 14:07:23.210"/>
+<msg timestamp="20220721 13:51:26.014" level="INFO">Opening url 'https://qastaging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220721 13:51:26.013" endtime="20220721 13:51:27.798"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220422 14:07:23.210" endtime="20220422 14:07:23.439"/>
+<status status="PASS" starttime="20220721 13:51:27.799" endtime="20220721 13:51:27.927"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:12.538" endtime="20220422 14:07:23.440"/>
+<status status="PASS" starttime="20220721 13:51:24.774" endtime="20220721 13:51:27.927"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220422 14:07:23.442" endtime="20220422 14:07:23.444"/>
+<status status="PASS" starttime="20220721 13:51:27.927" endtime="20220721 13:51:27.929"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>2</arg>
+<arg>1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220422 14:07:23.445" endtime="20220422 14:07:23.447"/>
+<status status="PASS" starttime="20220721 13:51:27.929" endtime="20220721 13:51:27.929"/>
 </kw>
 <kw name="When fill the login form" library="keywords_LoginPage">
-<arg>umut</arg>
-<arg>Hacettepe2019</arg>
+<arg>system</arg>
+<arg>Aa3456</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:07:23.452" endtime="20220422 14:07:29.830"/>
+<status status="PASS" starttime="20220721 13:51:27.931" endtime="20220721 13:51:31.218"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:29.832" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220422 14:07:29.831" endtime="20220422 14:07:36.267"/>
+<msg timestamp="20220721 13:51:31.219" level="INFO">Typing text 'system' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220721 13:51:31.218" endtime="20220721 13:51:34.377"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_l}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:36.268" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg timestamp="20220422 14:07:40.338" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220422 14:07:42.546" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220422 14:07:36.267" endtime="20220422 14:07:42.546"/>
+<msg timestamp="20220721 13:51:34.378" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220721 13:51:36.448" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220721 13:51:37.516" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220721 13:51:34.378" endtime="20220721 13:51:37.516"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:23.448" endtime="20220422 14:07:42.547"/>
+<status status="PASS" starttime="20220721 13:51:27.930" endtime="20220721 13:51:37.517"/>
 </kw>
 <kw name="And click login buton" library="keywords_LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:42.550" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20220422 14:07:42.548" endtime="20220422 14:07:46.805"/>
+<msg timestamp="20220721 13:51:37.517" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220721 13:51:37.517" endtime="20220721 13:51:39.682"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:42.547" endtime="20220422 14:07:46.805"/>
+<status status="PASS" starttime="20220721 13:51:37.517" endtime="20220721 13:51:39.682"/>
 </kw>
 <kw name="And click survey management" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${survey_management_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:07:46.807" endtime="20220422 14:07:50.903"/>
+<status status="PASS" starttime="20220721 13:51:39.683" endtime="20220721 13:51:41.872"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${survey_management_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:50.904" level="INFO">Clicking element 'xpath://div[normalize-space()='Survey Management']'.</msg>
-<status status="PASS" starttime="20220422 14:07:50.903" endtime="20220422 14:07:55.231"/>
+<msg timestamp="20220721 13:51:41.873" level="INFO">Clicking element 'xpath://div[normalize-space()='Survey Management']'.</msg>
+<status status="PASS" starttime="20220721 13:51:41.872" endtime="20220721 13:51:43.975"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:46.806" endtime="20220422 14:07:55.231"/>
+<status status="PASS" starttime="20220721 13:51:39.682" endtime="20220721 13:51:43.975"/>
 </kw>
 <kw name="And click Surveys" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${surveys_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:07:55.232" endtime="20220422 14:07:59.281"/>
+<status status="PASS" starttime="20220721 13:51:43.976" endtime="20220721 13:51:46.001"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${surveys_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:59.282" level="INFO">Clicking element 'xpath://div[normalize-space()='Surveys']'.</msg>
-<status status="PASS" starttime="20220422 14:07:59.281" endtime="20220422 14:08:03.577"/>
+<msg timestamp="20220721 13:51:46.002" level="INFO">Clicking element 'xpath://div[normalize-space()='Surveys']'.</msg>
+<status status="PASS" starttime="20220721 13:51:46.001" endtime="20220721 13:51:48.146"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:55.232" endtime="20220422 14:08:03.578"/>
+<status status="PASS" starttime="20220721 13:51:43.975" endtime="20220721 13:51:48.147"/>
 </kw>
-<kw name="And click Searchbar And Search Temp Survey and click it" library="keywords_surveyListPage">
+<kw name="And click Searchbar And Search Survey and click it" library="keywords_surveyListPage">
+<arg>Hic Est Temptare</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${search_bar_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:03.579" endtime="20220422 14:08:07.642"/>
+<msg timestamp="20220721 13:52:10.209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220721 13:52:10.209" level="FAIL">Element 'xpath://input[@placeholder='Search']' not visible after 20 seconds.</msg>
+<status status="FAIL" starttime="20220721 13:51:48.149" endtime="20220721 13:52:10.209"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${search_bar_l}</arg>
-<arg>Hic est temptare</arg>
+<arg>${surveyTitle}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:07.643" level="INFO">Typing text 'Hic est temptare' into text field 'xpath://input[@placeholder='Search']'.</msg>
-<status status="PASS" starttime="20220422 14:08:07.642" endtime="20220422 14:08:13.841"/>
+<status status="NOT RUN" starttime="20220721 13:52:10.209" endtime="20220721 13:52:10.209"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${temp_survey_l}</arg>
+<arg>(//a[@class='acx-list-link'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:13.841" endtime="20220422 14:08:17.902"/>
+<status status="NOT RUN" starttime="20220721 13:52:10.209" endtime="20220721 13:52:10.209"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${temp_survey_l}</arg>
+<arg>(//a[@class='acx-list-link'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:17.903" level="INFO">Clicking element 'xpath://a[contains(text(),'Hic est temptare Quaestionario')]'.</msg>
-<status status="PASS" starttime="20220422 14:08:17.903" endtime="20220422 14:08:21.994"/>
+<status status="NOT RUN" starttime="20220721 13:52:10.209" endtime="20220721 13:52:10.209"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:03.579" endtime="20220422 14:08:21.996"/>
+<status status="FAIL" starttime="20220721 13:51:48.148" endtime="20220721 13:52:10.209"/>
 </kw>
-<kw name="And click invitation" library="keywords_surveyEditPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${invitation_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:21.998" endtime="20220422 14:08:26.038"/>
+<kw name="And click general" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.209" endtime="20220721 13:52:10.209"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${invitation_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:26.039" level="INFO">Clicking element 'xpath://div[@class='q-stepper__title'][normalize-space()='Invitation']'.</msg>
-<status status="PASS" starttime="20220422 14:08:26.038" endtime="20220422 14:08:30.281"/>
+<kw name="And change title to temp title" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.209" endtime="20220721 13:52:10.225"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:21.996" endtime="20220422 14:08:30.281"/>
+<kw name="And change survey language to english" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="And click Other Preferences" library="keywords_surveyEditPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220422 14:08:30.282" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220422 14:08:30.282" endtime="20220422 14:08:32.299"/>
+<kw name="And click same execution title toggle" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${other_pref_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:32.300" endtime="20220422 14:08:36.363"/>
+<kw name="And write execution title" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${other_pref_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:36.363" level="INFO">Clicking element 'xpath:(//div[contains(text(),'Other Preferences')])[1]'.</msg>
-<status status="PASS" starttime="20220422 14:08:36.363" endtime="20220422 14:08:40.456"/>
+<kw name="And click opening message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:30.281" endtime="20220422 14:08:40.457"/>
+<kw name="And change opening message to temp message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="And switch toggle of if invitee does not respond the invitation, send another invitation" library="keywords_surveyEditPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220422 14:08:40.458" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220422 14:08:40.458" endtime="20220422 14:08:42.469"/>
+<kw name="And click closing message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${resend_toggle_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:42.471" endtime="20220422 14:08:46.564"/>
+<kw name="And change closing message to temp message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${resend_toggle_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:46.565" level="INFO">Clicking element 'xpath:(//div[@class='q-toggle__track'])[3]'.</msg>
-<status status="PASS" starttime="20220422 14:08:46.565" endtime="20220422 14:08:50.815"/>
+<kw name="And click save and continue button" library="keywords_surveyEditPage">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:40.457" endtime="20220422 14:08:50.815"/>
+<kw name="And click general" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="And switch toggle of if invitee does not finish the survey, send a reminder" library="keywords_surveyEditPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220422 14:08:50.816" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220422 14:08:50.816" endtime="20220422 14:08:52.833"/>
+<kw name="And change title to original title" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${reminder_toggle_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:52.834" endtime="20220422 14:08:56.885"/>
+<kw name="And change survey language to turkish" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${reminder_toggle_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:56.886" level="INFO">Clicking element 'xpath:(//div[@class='q-toggle__track'])[4]'.</msg>
-<status status="PASS" starttime="20220422 14:08:56.886" endtime="20220422 14:09:01.222"/>
+<kw name="And click same execution title toggle" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:50.815" endtime="20220422 14:09:01.222"/>
+<kw name="And click opening message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="And switch toggle of use alternative invitation channels" library="keywords_surveyEditPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220422 14:09:01.226" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220422 14:09:01.224" endtime="20220422 14:09:03.259"/>
+<kw name="And change opening message to original message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.226"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${alternative_ch_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:09:03.259" endtime="20220422 14:09:07.297"/>
+<kw name="And click closing message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.226" endtime="20220721 13:52:10.243"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${alternative_ch_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:09:07.301" level="INFO">Clicking element 'xpath:(//div[@class='q-toggle__track'])[5]'.</msg>
-<status status="PASS" starttime="20220422 14:09:07.298" endtime="20220422 14:09:11.401"/>
+<kw name="And change closing message to original message" library="keywords_surveyEditPage_General">
+<status status="NOT RUN" starttime="20220721 13:52:10.243" endtime="20220721 13:52:10.244"/>
 </kw>
-<status status="PASS" starttime="20220422 14:09:01.223" endtime="20220422 14:09:11.401"/>
-</kw>
-<kw name="And click Save" library="keywords_surveyEditPage">
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220422 14:09:11.402" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20220422 14:09:11.402" endtime="20220422 14:09:13.407"/>
-</kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${save_l}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220422 14:09:13.407" endtime="20220422 14:09:17.699"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${save_l}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:09:17.699" endtime="20220422 14:09:21.740"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${save_l}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:09:21.740" level="INFO">Clicking element 'xpath://span[contains(text(),'Save')]'.</msg>
-<status status="PASS" starttime="20220422 14:09:21.740" endtime="20220422 14:09:25.820"/>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>3</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220422 14:09:25.822" endtime="20220422 14:09:25.824"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//div[@class='q-img__content absolute-full']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:09:25.825" endtime="20220422 14:09:31.875"/>
-</kw>
-<status status="PASS" starttime="20220422 14:09:11.402" endtime="20220422 14:09:31.875"/>
+<kw name="And click save and continue button" library="keywords_surveyEditPage">
+<status status="NOT RUN" starttime="20220721 13:52:10.244" endtime="20220721 13:52:10.244"/>
 </kw>
 <kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220422 14:09:31.877" endtime="20220422 14:09:36.983"/>
+<status status="PASS" starttime="20220721 13:52:10.244" endtime="20220721 13:52:13.378"/>
 </kw>
-<status status="PASS" starttime="20220422 14:09:31.876" endtime="20220422 14:09:36.984"/>
+<status status="PASS" starttime="20220721 13:52:10.244" endtime="20220721 13:52:13.379"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:12.537" endtime="20220422 14:09:36.985"/>
+<status status="FAIL" starttime="20220721 13:51:24.774" endtime="20220721 13:52:13.379">Element 'xpath://input[@placeholder='Search']' not visible after 20 seconds.</status>
 </test>
-<doc>Survey Communication Rule</doc>
-<status status="PASS" starttime="20220422 14:07:12.095" endtime="20220422 14:09:36.988"/>
+<doc>Survey Activation, Invitation , Preview On Survey Activation Page</doc>
+<status status="FAIL" starttime="20220721 13:51:24.520" endtime="20220721 13:52:13.379"/>
 </suite>
-<status status="PASS" starttime="20220422 14:07:12.056" endtime="20220422 14:09:36.991"/>
+<status status="FAIL" starttime="20220721 13:51:24.494" endtime="20220721 13:52:13.384"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="testCases">testCases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="SurveyCommunicationRule">testCases.SurveyCommunicationRule</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="SurveyGeneral">testCases.SurveyGeneral</stat>
 </suite>
 </statistics>
 <errors>

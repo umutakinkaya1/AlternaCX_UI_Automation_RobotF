@@ -1,151 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220422 14:07:51.375" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220721 13:52:50.339" rpa="false" schemaversion="2">
 <suite id="s1" name="testCases" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases">
-<suite id="s1-s1" name="TopicModelList" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\TopicModelList.robot">
-<test id="s1-s1-t1" name="Topic Model List Existence Check">
+<suite id="s1-s1" name="WidgetImpactButterfly" source="C:\Users\User\PycharmProjects\RobotFramework\tests\testCases\WidgetImpactButterfly.robot">
+<test id="s1-s1-t1" name="Adding New Butterfly Widget to Report">
 <kw name="open the browser with ALternaWebPage" library="keywords_LoginPage" type="SETUP">
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>executable_path=tests/drivers/chromedriver.exe</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220422 14:07:51.900" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220422 14:07:51.899" endtime="20220422 14:07:53.120"/>
+<msg timestamp="20220721 13:52:50.661" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220721 13:52:50.661" endtime="20220721 13:52:51.927"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
-<arg>https://staging.alternacx.com/</arg>
+<arg>https://qastaging.alternacx.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220422 14:07:53.122" level="INFO">Opening url 'https://staging.alternacx.com/'</msg>
-<status status="PASS" starttime="20220422 14:07:53.121" endtime="20220422 14:07:55.783"/>
+<msg timestamp="20220721 13:52:51.927" level="INFO">Opening url 'https://qastaging.alternacx.com/'</msg>
+<status status="PASS" starttime="20220721 13:52:51.927" endtime="20220721 13:52:55.426"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220422 14:07:55.784" endtime="20220422 14:07:55.927"/>
+<status status="PASS" starttime="20220721 13:52:55.427" endtime="20220721 13:52:55.558"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:51.899" endtime="20220422 14:07:55.929"/>
+<status status="PASS" starttime="20220721 13:52:50.661" endtime="20220721 13:52:55.558"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${widget_type}</var>
+<arg>Impact Butterfly</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220721 13:52:55.559" level="INFO">${widget_type} = Impact Butterfly</msg>
+<status status="PASS" starttime="20220721 13:52:55.559" endtime="20220721 13:52:55.559"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${random_number}</var>
+<arg>random.sample(range(1, 9999), 1)</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220721 13:52:55.560" level="INFO">${random_number} = [7010]</msg>
+<status status="PASS" starttime="20220721 13:52:55.559" endtime="20220721 13:52:55.560"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${created_report_l}</var>
+<arg>//div[contains(text(), 'Automation Report${random_number}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220721 13:52:55.560" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[7010]')]</msg>
+<status status="PASS" starttime="20220721 13:52:55.560" endtime="20220721 13:52:55.560"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${created_report_l}</var>
+<arg>//div[contains(text(), 'Automation Report${random_number}')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220721 13:52:55.562" level="INFO">${created_report_l} = //div[contains(text(), 'Automation Report[7010]')]</msg>
+<status status="PASS" starttime="20220721 13:52:55.561" endtime="20220721 13:52:55.562"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220422 14:07:55.930" endtime="20220422 14:07:55.944"/>
+<status status="PASS" starttime="20220721 13:52:55.563" endtime="20220721 13:52:55.569"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220422 14:07:55.946" endtime="20220422 14:07:55.947"/>
+<status status="PASS" starttime="20220721 13:52:55.570" endtime="20220721 13:52:55.572"/>
 </kw>
 <kw name="When fill the login form" library="keywords_LoginPage">
-<arg>umut</arg>
-<arg>Hacettepe2019</arg>
+<arg>system</arg>
+<arg>Aa3456</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:07:55.951" endtime="20220422 14:07:57.856"/>
+<status status="PASS" starttime="20220721 13:52:55.574" endtime="20220721 13:52:57.370"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_l}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:57.857" level="INFO">Typing text 'umut' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220422 14:07:57.856" endtime="20220422 14:07:59.500"/>
+<msg timestamp="20220721 13:52:57.370" level="INFO">Typing text 'system' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220721 13:52:57.370" endtime="20220721 13:52:58.993"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${password_l}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220422 14:07:59.503" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg timestamp="20220422 14:08:00.575" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220422 14:08:01.181" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220422 14:07:59.501" endtime="20220422 14:08:01.181"/>
+<msg timestamp="20220721 13:52:58.995" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg timestamp="20220721 13:53:00.037" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220721 13:53:00.629" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220721 13:52:58.994" endtime="20220721 13:53:00.629"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:55.949" endtime="20220422 14:08:01.181"/>
+<status status="PASS" starttime="20220721 13:52:55.573" endtime="20220721 13:53:00.629"/>
 </kw>
 <kw name="And click login buton" library="keywords_LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:01.183" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20220422 14:08:01.183" endtime="20220422 14:08:02.648"/>
+<msg timestamp="20220721 13:53:00.631" level="INFO">Clicking element 'xpath://span[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20220721 13:53:00.630" endtime="20220721 13:53:01.703"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:01.182" endtime="20220422 14:08:02.648"/>
+<status status="PASS" starttime="20220721 13:53:00.630" endtime="20220721 13:53:01.703"/>
 </kw>
-<kw name="And click text analytics" library="keywords_mainPage">
+<kw name="And click Report Management" library="keywords_mainPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220721 13:53:01.704" endtime="20220721 13:53:01.705"/>
+</kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${text_analytics_l}</arg>
+<arg>${report_management_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:02.649" endtime="20220422 14:08:04.742"/>
+<status status="PASS" starttime="20220721 13:53:01.705" endtime="20220721 13:53:04.989"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${text_analytics_l}</arg>
+<arg>${report_management_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:04.744" level="INFO">Clicking element 'xpath://div[normalize-space()='Text Analytics']'.</msg>
-<status status="PASS" starttime="20220422 14:08:04.742" endtime="20220422 14:08:05.821"/>
+<msg timestamp="20220721 13:53:04.989" level="INFO">Clicking element 'xpath://div[normalize-space()='Report Management']'.</msg>
+<status status="PASS" starttime="20220721 13:53:04.989" endtime="20220721 13:53:07.072"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:02.648" endtime="20220422 14:08:05.822"/>
+<status status="PASS" starttime="20220721 13:53:01.704" endtime="20220721 13:53:07.072"/>
 </kw>
-<kw name="And click topic models" library="keywords_mainPage">
+<kw name="And click Reports" library="keywords_mainPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${topic_models_l}</arg>
+<arg>${reports_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:05.824" endtime="20220422 14:08:06.877"/>
+<status status="PASS" starttime="20220721 13:53:07.073" endtime="20220721 13:53:09.102"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${topic_models_l}</arg>
+<arg>${reports_l}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:06.880" level="INFO">Clicking element 'xpath://div[normalize-space()='Topic Models']'.</msg>
-<status status="PASS" starttime="20220422 14:08:06.879" endtime="20220422 14:08:08.070"/>
+<msg timestamp="20220721 13:53:09.103" level="INFO">Clicking element 'xpath://div[normalize-space()='Reports']'.</msg>
+<status status="PASS" starttime="20220721 13:53:09.102" endtime="20220721 13:53:11.249"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:05.823" endtime="20220422 14:08:08.072"/>
+<status status="PASS" starttime="20220721 13:53:07.073" endtime="20220721 13:53:11.250"/>
 </kw>
-<kw name="Then should see topic models" library="keywords_TopicModelListPage">
+<kw name="And click New Report" library="keywords_reportListPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${first_topic_model_l}</arg>
+<arg>${new_report_l}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220422 14:08:08.074" endtime="20220422 14:08:12.038"/>
+<status status="PASS" starttime="20220721 13:53:11.250" endtime="20220721 13:53:13.291"/>
 </kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>${first_topic_model_l}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220422 14:08:13.099" level="INFO">Element 'xpath://tbody/tr[1]/td[2]' is displayed.</msg>
-<status status="PASS" starttime="20220422 14:08:12.041" endtime="20220422 14:08:13.099"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_report_l}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220721 13:53:13.292" level="INFO">Clicking element '//span[contains(text(),'Add New Report')]'.</msg>
+<status status="PASS" starttime="20220721 13:53:13.291" endtime="20220721 13:53:15.539"/>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${first_topic_model}</var>
-<arg>${first_topic_model_l}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220422 14:08:14.147" level="INFO">${first_topic_model} = Mediamarkt Retail Model TR v3.0</msg>
-<status status="PASS" starttime="20220422 14:08:13.099" endtime="20220422 14:08:14.148"/>
+<status status="PASS" starttime="20220721 13:53:11.250" endtime="20220721 13:53:15.539"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${first_topic_model}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220422 14:08:14.148" endtime="20220422 14:08:14.149"/>
+<kw name="And write Report Title" library="keywords_reportListPage">
+<arg>${random_number}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${report_title_l}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220721 13:53:15.541" endtime="20220721 13:53:17.579"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:08.072" endtime="20220422 14:08:14.150"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${report_title_l}</arg>
+<arg>Automation Report${random_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220721 13:53:17.580" level="INFO">Typing text 'Automation Report[7010]' into text field '//span/label/div/div/div/input'.</msg>
+<msg timestamp="20220721 13:53:20.875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220721 13:53:20.884" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00316463+2188387]
+	Ordinal0 [0x002AE461+1762401]
+	Ordinal0 [0x001C3C40+801856]
+	Ordinal0 [0x001ECF63+970595]
+	Ordinal0 [0x001EC63E+968254]
+	Ordinal0 [0x0020C7DC+1099740]
+	Ordinal0 [0x001E7FF4+950260]
+	Ordinal0 [0x0020C9F4+1100276]
+	Ordinal0 [0x0021CC22+1166370]
+	Ordinal0 [0x0020C5F6+1099254]
+	Ordinal0 [0x001E6BE0+945120]
+	Ordinal0 [0x001E7AD6+948950]
+	GetHandleVerifier [0x005B71F2+2712546]
+	GetHandleVerifier [0x005A886D+2652765]
+	GetHandleVerifier [0x003A002A+520730]
+	GetHandleVerifier [0x0039EE06+516086]
+	Ordinal0 [0x002B468B+1787531]
+	Ordinal0 [0x002B8E88+1805960]
+	Ordinal0 [0x002B8F75+1806197]
+	Ordinal0 [0x002C1DF1+1842673]
+	BaseThreadInitThunk [0x76A4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F97A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F97A6E+238]
+</msg>
+<status status="FAIL" starttime="20220721 13:53:17.579" endtime="20220721 13:53:20.884"/>
+</kw>
+<status status="FAIL" starttime="20220721 13:53:15.540" endtime="20220721 13:53:20.885"/>
+</kw>
+<kw name="And choose Category" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.885" endtime="20220721 13:53:20.885"/>
+</kw>
+<kw name="And click Save" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.885" endtime="20220721 13:53:20.885"/>
+</kw>
+<kw name="And search report on report list screen" library="keywords_reportListPage">
+<arg>${random_number}</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.886" endtime="20220721 13:53:20.886"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" starttime="20220721 13:53:20.886" endtime="20220721 13:53:20.886"/>
+</kw>
+<kw name="And click My Reports" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.886" endtime="20220721 13:53:20.886"/>
+</kw>
+<kw name="And click Report that created" library="keywords_reportListPage">
+<arg>${created_report_l}</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.886" endtime="20220721 13:53:20.886"/>
+</kw>
+<kw name="And add widget" library="keywords_reportWidgetPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.887" endtime="20220721 13:53:20.887"/>
+</kw>
+<kw name="and click text analytics widget" library="keywords_reportWidgetPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.887" endtime="20220721 13:53:20.887"/>
+</kw>
+<kw name="and click ai chart" library="keywords_reportWidgetPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.887" endtime="20220721 13:53:20.888"/>
+</kw>
+<kw name="And click Impact Butterfly" library="keywords_reportWidgetPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.888" endtime="20220721 13:53:20.888"/>
+</kw>
+<kw name="And write Widget Title" library="keywords_reportWidgetPage">
+<arg>${widget_type}</arg>
+<arg>${random_number}</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.888" endtime="20220721 13:53:20.888"/>
+</kw>
+<kw name="And choose Layout" library="keywords_reportWidgetPage">
+<arg>2</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.888" endtime="20220721 13:53:20.888"/>
+</kw>
+<kw name="And choose impact Type" library="keywords_reportWidgetPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.888" endtime="20220721 13:53:20.888"/>
+</kw>
+<kw name="And choose Topic Model for impact butterfly" library="keywords_reportWidgetPage">
+<arg>1</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.889" endtime="20220721 13:53:20.889"/>
+</kw>
+<kw name="and click save" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.889" endtime="20220721 13:53:20.889"/>
+</kw>
+<kw name="and click report management" library="keywords_mainPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.889" endtime="20220721 13:53:20.889"/>
+</kw>
+<kw name="and click reports" library="keywords_mainPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.889" endtime="20220721 13:53:20.889"/>
+</kw>
+<kw name="and search report on report list screen" library="keywords_reportListPage">
+<arg>${random_number}</arg>
+<status status="NOT RUN" starttime="20220721 13:53:20.890" endtime="20220721 13:53:20.890"/>
+</kw>
+<kw name="and click delete icon" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.891" endtime="20220721 13:53:20.891"/>
+</kw>
+<kw name="and click delete button" library="keywords_reportListPage">
+<status status="NOT RUN" starttime="20220721 13:53:20.891" endtime="20220721 13:53:20.891"/>
 </kw>
 <kw name="close browser session" library="keywords_LoginPage" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220422 14:08:14.151" endtime="20220422 14:08:16.741"/>
+<status status="PASS" starttime="20220721 13:53:20.891" endtime="20220721 13:53:23.973"/>
 </kw>
-<status status="PASS" starttime="20220422 14:08:14.150" endtime="20220422 14:08:16.742"/>
+<status status="PASS" starttime="20220721 13:53:20.891" endtime="20220721 13:53:23.973"/>
 </kw>
-<status status="PASS" starttime="20220422 14:07:51.898" endtime="20220422 14:08:16.742"/>
+<status status="FAIL" starttime="20220721 13:52:50.659" endtime="20220721 13:53:23.973">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00316463+2188387]
+	Ordinal0 [0x002AE461+1762401]
+	Ordinal0 [0x001C3C40+801856]
+	Ordinal0 [0x001ECF63+970595]
+	Ordinal0 [0x001EC63E+968254]
+	Ordinal0 [0x0020C7DC+1099740]
+	Ordinal0 [0x001E7FF4+950260]
+	Ordinal0 [0x0020C9F4+1100276]
+	Ordinal0 [0x0021CC22+1166370]
+	Ordinal0 [0x0020C5F6+1099254]
+	Ordinal0 [0x001E6BE0+945120]
+	Ordinal0 [0x001E7AD6+948950]
+	GetHandleVerifier [0x005B71F2+2712546]
+	GetHandleVerifier [0x005A886D+2652765]
+	GetHandleVerifier [0x003A002A+520730]
+	GetHandleVerifier [0x0039EE06+516086]
+	Ordinal0 [0x002B468B+1787531]
+	Ordinal0 [0x002B8E88+1805960]
+	Ordinal0 [0x002B8F75+1806197]
+	Ordinal0 [0x002C1DF1+1842673]
+	BaseThreadInitThunk [0x76A4FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F97A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F97A6E+238]
+</status>
 </test>
-<doc>Survey Activation, Invitation , Preview On Survey Activation Page</doc>
-<status status="PASS" starttime="20220422 14:07:51.470" endtime="20220422 14:08:16.748"/>
+<doc>Impact Buuterfly Widget</doc>
+<status status="FAIL" starttime="20220721 13:52:50.380" endtime="20220721 13:53:23.973"/>
 </suite>
-<status status="PASS" starttime="20220422 14:07:51.404" endtime="20220422 14:08:16.748"/>
+<status status="FAIL" starttime="20220721 13:52:50.350" endtime="20220721 13:53:23.973"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="testCases">testCases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="TopicModelList">testCases.TopicModelList</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="WidgetImpactButterfly">testCases.WidgetImpactButterfly</stat>
 </suite>
 </statistics>
 <errors>

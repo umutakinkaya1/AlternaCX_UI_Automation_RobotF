@@ -13,7 +13,7 @@ Test Teardown   close browser session
 Define Independent Rules in Survey Communication Rules
     set selenium timeout        20
     set selenium speed      2
-    When fill the login form    umut    Hacettepe2019
+    When fill the login form    system      Aa3456
     And click login buton
     And click survey management
     And click Surveys
