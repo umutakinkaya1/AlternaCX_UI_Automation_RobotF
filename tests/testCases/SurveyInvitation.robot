@@ -26,4 +26,4 @@ Survey Invitation
     And click touchpoint
     And click Save
     And click save and continue button
-    And click invitation
+    And click invitatio
